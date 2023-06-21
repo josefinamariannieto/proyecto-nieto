@@ -99,7 +99,7 @@ p {
 
 
 header {
-  height: 10rem;
+  height: 14rem;
   background-color: #F8F4EE;
 }
 
@@ -119,6 +119,11 @@ nav {
 
 .activo {
   color: #E25821;
+}
+
+.nav-link:hover{
+  color: #E25821;
+  font-weight: 500;
 }
 
 
@@ -400,23 +405,23 @@ main {
 
 
 .section__proyectos {
-  width: 95%; 
-  min-width: 300px;     
+  width: 95%;
+  min-width: 300px;
   height: 2000px;
 
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-self: center;
   align-items: center;
-  margin: 0 auto          
+  margin: 0 auto
 }
 
 
 .cards__proyectos {
-  width: 95%;      
+  width: 95%;
   min-width: 300px;
   max-width: 400px;
-  
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, 300px);
@@ -458,18 +463,22 @@ section .card_icon {
   border-radius: 50%;
 
   place-items: center;
+  margin-right: 1rem;
 }
 
+section a{
+  color:#252426
+}
 
 section .card_icon i {
   color: #eadfd5;
-  size: 3rem;
- 
+  font-size: 1rem;
+
   justify-content: center;
 }
 
 
-.descripción-red{
+.descripción-red {
   height: 3rem;
   display: flex;
   text-align: center;
@@ -524,64 +533,60 @@ section .card_icon i {
 
 
 .section__acerca {
-  width: 100%;
-  height: 900px;
-  min-width: 300px;
-  margin-right: 0;
+  width: 80%;
+  height: 500px;
+  min-width: 290px;
+  margin: 0 auto;
 
   display: grid;
-  grid-template-rows: 0.5fr 0.5fr 4fr;
+  grid-template-rows: 2fr 2fr 4fr;
   align-items: center;
   justify-items: center;
   justify-content: center;
-  text-align: center;
-
-}
-
-
-.acercade__parrafo{
-  width: 92%;
-  max-width: 1200px;
-  height: 40vh;
-
-  display: flex;
-  margin: 0 auto;
-}
-
-.acercade__parrafo p{
+  justify-self: center;
   text-align: center;
 }
 
-.section__acerca img {
+
+.carrusel {
   width: 100%;
-  height: 100%;
-}
-
-
-.carrusel{
-  width: 80%;
   height: auto;
 }
 
 
+.acercade__parrafo {
+  width: 80%;
+  max-width: 1000px;
+  height: 600px;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0 auto;
+  padding-top: 2rem;
 
+  display: flex;
+  align-items: center;
+}
+
+
+.acercade__parrafo p {
+  text-align: center;
+}
 
 /* ---- Estilos Página Contacto---- */
 
 
+.section__formulario {
+  width: 1200px;
+  height: 600px;
 
-.section__formulario{
-    width: 1200px;
-    height: 600px;
-      
-    display: grid;
-    grid-template-rows: 1fr 1fr 5fr;
-    justify-self: center;
-    align-items: center;
-    justify-content: center;
-  
-    margin: 0 auto;
-  }
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+}
 
 
 .contenedor-titulocontacto {
@@ -715,14 +720,14 @@ form {
 
 footer {
   width: 100%;
-  height: auto;
+  height: 300px;
   background-color: #F8F4EE;
 
   display: grid;
-  grid-template-rows: repeat(2, 15vh);
+  grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   align-items: center;
-
+  align-content: center
 }
 
 
@@ -752,9 +757,9 @@ footer .card_icon {
 
 
 
-.card_icon i {
+.card_icon i{
   color: #eadfd5;
-  size: 1.2rem;
+  font-size: 1rem;
 
   justify-content: center;
 }
@@ -784,10 +789,6 @@ footer a {
   grid-template-columns: 100%;
   grid-template-rows: repeat(2, 5vh);
   justify-content: center;
-
-
-  margin-top: 30px;
-  margin-bottom: 60px;
 }
 
 
@@ -832,41 +833,61 @@ footer a {
   }
 
 
-  
-     /* página proyecto */
 
-.section__proyectos {
-  width: 92%;      
-  max-width: 1200px;
-  height: 1000px;
+  /* página proyecto */
 
-  display: flex;
-  flex-direction: column; 
-  justify-self: center;
-  margin: 0 auto          
-}
+  .section__proyectos {
+    width: 92%;
+    max-width: 1200px;
+    height: 1300px;
 
-
-.cards__proyectos {
-  width: 95%;      
-  max-width: 1200px;
-  height: 700px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  
-
-  justify-self: center;
-}
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 0 auto
+  }
 
 
+  .cards__proyectos {
+    width: 95%;
+    max-width: 1200px;
+    height: 700px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
-  @media (min-width: 1200px) and (orientation:landscape){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+
+    justify-self: center;
+  }
+
+
+
+  .section__acerca {
+    height: 800px;
+  }
+
+
+
+  .acercade__parrafo {
+    width: 80%;
+    max-width: 1000px;
+    height: 400px;
+  }
+
+
+
+  .footer__redes {
+    max-width: 50%;
+  }
+
+
+
+  @media (min-width: 1200px) and (orientation:landscape) {
 
     /* nav */
 
@@ -876,7 +897,7 @@ footer a {
     }
 
 
-    .nav-item{
+    .nav-item {
       margin-left: 0.5rem;
     }
 
@@ -912,20 +933,20 @@ footer a {
 
     /* página proyecto */
 
-.section__proyectos {
-      width: 92%;      
+    .section__proyectos {
+      width: 92%;
       max-width: 1200px;
       height: 1000px;
 
       display: flex;
-      flex-direction: column; 
+      flex-direction: column;
       justify-self: center;
-      margin: 0 auto          
+      margin: 0 auto
     }
 
 
     .cards__proyectos {
-      width: 95%;      
+      width: 95%;
       max-width: 1200px;
       height: 700px;
 
@@ -939,20 +960,28 @@ footer a {
 
       justify-self: center;
     }
-    
-    
+
+
+
+    .section__acerca {
+      height: 900px;
+    }
+
+
+
     /* footer */
 
     .footer__redes {
-      width: 50%;
+      max-width: 50%;
     }
-    
 
-    .redes__card{
+
+    .redes__card {
       display: flex;
     }
 
     footer a {
       display: block;
-    }    
-  }}
+    }
+  }
+}
