@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Vincular archivos Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <!-- Vincular archivo Css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>DiseñoUux</title>
+
+
+  <!-- Vincular fuentes: Sacramento y Capriola -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-xl">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="../img/Logo.png" class="logo__img" alt="Imagen del logo">
+      </a>
+
+      <nav class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="colaboraciones.html">colaboraciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activo" href="acercade.html">acerca de</a>
+          </li>
+        </ul>
+
+        <form class="Buscar__campo">
+          <input type="search" placeholder="Buscar">
+          <i class="bi bi-search"></i>
+        </form>
+
+        <a class="nav-link contacto__texto" aria-current="page" href="contacto.html">contacto</a>
+      </nav>
+    </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="section__acerca">
+      <h1 class="section__titulo">¡hola!</h1>
+
+      <h2 class="seccion__titulo color-primary">¿Te contamos un poco sobre nosotros?</h2>
+      </div>
+
+      <div class="carrusel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/manos-alto-angulo-sosteniendo-papel.jpg" class="d-block w-100"
+                alt="manos-alto-angulo-sosteniendo-papel">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/mujer-haciendo-interfaz-aplicacion-moderna.jpg" class="d-block w-100"
+                alt="mujer-haciendo-interfaz-aplicacion-moderna">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/vista-lateral-mano-sosteniendo-pieza-papel.jpg" class="d-block w-100"
+                alt="vista-lateral-mano-sosteniendo-pieza-papel">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </section>
+
+    <section>
+      <div class="acercade__parrafo">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+          et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+          facilisi.
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et.
+        </p>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer__redes">
+
+      <div class="redes__card">
+        <div class="card_icon">
+          <i class="bi bi-whatsapp"></i>
+        </div>
+        <a href="./index.html">+54 9 22 336167002</a>
+      </div>
+
+      <div class="redes__card">
+        <div class="card_icon">
+          <i class="bi bi-envelope"></i>
+        </div>
+        <a href="./index.html">diseñouux@gmail.com</a>
+      </div>
+
+      <div class="redes__card">
+        <div class="card_icon">
+          <i class="bi bi-instagram"></i>
+        </div>
+        <a href="./index.html">@diseñouux</a>
+      </div>
+
+    </div>
+
+    <div class="footer__info">
+      <p class="footer__texto">Buenos aires I Argentina</p>
+
+      <div class="linea-copy">
+        <p class="footer__copy">DISEÑO UUX I Todos los derechos reservados - 2023</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
