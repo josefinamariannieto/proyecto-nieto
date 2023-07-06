@@ -813,7 +813,6 @@ footer a {
 
 
 
-
 @media (min-width: 768px) and (orientation:landscape) {
   .cards__container {
     grid-template-columns: repeat(2, minmax(330px, 350px));
