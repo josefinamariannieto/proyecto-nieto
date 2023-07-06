@@ -1,0 +1,90 @@
+.logo__img {
+  width: 20vw;
+  max-width: 128px;
+  height: auto;
+  max-width: 128px;
+}
+
+header {
+  height: 14rem;
+  background-color: #F8F4EE;
+}
+
+nav {
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+  font-weight: 400;  
+  padding-left: 1rem;
+} 
+
+.nav-link {
+  color: #252426;
+}
+
+.activo {
+  color: #E25821;
+}
+
+.nav-link:hover{
+  color: #E25821;
+  font-weight: 500;
+}
+
+.navbar-toggler {
+  border-style: none;
+  color: #E25821;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+  color: #E25821;
+  order: 1;
+}
+
+.navbar-collapse {
+  width: 60%;
+  background-color: #F8F4EE;
+}
+
+nav form {
+  display: none;
+  align-items: center;
+}
+
+nav i {
+  padding-top: 1rem;
+  padding-left: 0.4rem;
+  color: #E25821;
+}
+
+nav input {
+  width: 10rem;
+  height: 3rem;
+  font-family: 'Capriola', sans-serif;
+  font-size: 1rem;
+  color: #252426;
+  font-weight: 400;
+  padding-left: 0.5rem
+}
+
+.contacto__texto {
+  font-family: 'Capriola', sans-serif;
+  justify-content: end;
+  color: #E25821;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-right: 1rem;
+}
+
+
+@media (min-width: 1200px) and (orientation:landscape) {
+
+  nav form {
+  display: block;
+  align-items: center;
+  }
+
+  .nav-item {
+  margin-left: 0.5rem;
+  }
+}

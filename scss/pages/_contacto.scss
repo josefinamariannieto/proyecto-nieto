@@ -1,0 +1,111 @@
+.section__formulario {
+  width: 1200px;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 5fr;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.contenedor-titulocontacto {
+margin-bottom: 50px;
+}
+
+.contenedor-subtitulocontacto {
+  margin-bottom: 50px;
+}
+
+.linea-contacto1 {
+width: 60px;
+height: 3px;
+border-radius: 2px;
+background-color: #E25821;
+margin-top: 0px;
+margin-bottom: 0px;
+justify-self: center;
+margin: 0 auto
+}
+
+.linea-contacto2 {
+  width: 48px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #E25821;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-datoscontacto1 {
+  width: 600px;
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.input-nombre {
+  width: 290px;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: 18px;
+}
+
+.input-telefono {
+  width: 290px;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: 18px;
+}
+
+.input-email {
+  width: 600px;
+  height: 50px;
+  margin-bottom: 18px;
+}
+
+.input-mensaje {
+  width: 600px;
+  height: 170px;
+}
+
+input {
+  height: 46px;
+  border-radius: 10px;
+  border-color: #E25821;
+  background-color: #F8F4EE;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.input-email-msj-boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-icono {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+
+.boton-enviar {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #E25821;
+  border-color: none;
+}
