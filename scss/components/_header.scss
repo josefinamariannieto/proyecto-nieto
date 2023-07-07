@@ -1,94 +1,103 @@
-.logo__img {
+.logo {
   width: 20vw;
-  max-width: 128px;
+  max-width: 110px;
   height: auto;
-  max-width: 128px;
 }
 
 header {
-  height: 14rem;
+  height: 7rem;
   background-color: $color-light;
+ 
+
+  .navbar {
+    height: 5rem;
+    --bs-navbar-padding-X: 0;
+    --bs-navbar-padding-y: 0;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 100vw;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+    background-color: $color-light;
+  }
+  
+  .nav-link {
+    color: $color-dark;
+    padding-left: 3rem;
+    
+    &:hover {
+      color: $color-bg-container;
+      font-weight: 500;
+    }
+  }
+
+  .contacto {
+    color: $color-acentotomato;
+    justify-content: end;
+    font-weight: 500;
+    padding: 2rem 2rem;
+
+    &:hover {
+      color: $color-bg-container;
+      font-weight: 500;
+    }
+  }
+  
+  .navbar-toggler {
+    border-style: outset;
+    color: $color-dark;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    &__icon {
+      color: $color-primary;
+      order: 1;
+    }
+  }
+
+  .navbar-collapse {
+    width: 100vw;
+    height: 30rem;
+    background-color: $color-light;
+  }
 
   nav {
     font: $subtitle-font;
 
-    i {
-      padding-top: 1rem;
-      padding-left: 0.4rem;
-      color: $color-primary;
-    }
-
-    input {
-      width: 10rem;
-      height: 3rem;
-      font-family: $font-primary;
-      font-size: 1rem;
-      color: $color-dark;
-      font-weight: 400;
-      padding-left: 0.5rem
-    }
-
-    .nav-link {
-      color: $color-dark;
-
-      &:hover {
-        color: $color-bg-container;
-        font-weight: 500;
-      }
-    }
-
     .activo {
-      color: $color-primary;
+      color: $color-light;
+      background-color: $color-bg-container;
     }
-
-    .navbar-toggler {
-      border-style: none;
-      color: $color-primary;
-      font-size: 1.5rem;
-
-      &__icon {
-        color: $color-primary;
-        order: 1;
-      }
-    }
-
-    .navbar-collapse {
-      width: 60%;
-      background-color: $color-light;
-    }   
+  }     
   }
-}
 
-.contacto {
-  color: $color-acentotomato;
-  background-color: $color-bg-secondary;
-  justify-content: end;
-  font-weight: 500;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  border-radius: 2rem;
-  text-align: center;
-
-  &:hover {
-    color: $color-bg-container;
-    font-weight: 500;
-  }
-}   
-
- .buscar__campo {
-    display: none;
-    align-items: center;
-}
 
 
 @media (min-width: 1200px) and (orientation:landscape) {
 
-  .buscar__campo {
-    display: block;
-    align-items: center;
+  .activo {
+    color: $color-primary;
+    background-color: $color-light;
+  }
+
+  .contacto {
+    background-color: $color-bg-secondary;
+    justify-content: center;
+    font-weight: 500;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 2rem;
+    text-align: center;
   }
 
   .nav-item {
     margin-left: 0.5rem;
+  }
+
+  header .navbar-collapse {    
+    height: 7rem;
   }
 }
