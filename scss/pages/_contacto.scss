@@ -1,4 +1,4 @@
-.section__formulario {
+.formulario__seccion {
   width: 1200px;
   height: 600px;
   display: grid;
@@ -10,11 +10,7 @@
 }
 
 
-.contenedor-titulocontacto {
-margin-bottom: 50px;
-}
-
-.contenedor-subtitulocontacto {
+subtitulocontacto__contenedor{
   margin-bottom: 50px;
 }
 
@@ -22,7 +18,7 @@ margin-bottom: 50px;
 width: 60px;
 height: 3px;
 border-radius: 2px;
-background-color: #E25821;
+background-color: $color-primary;
 margin-top: 0px;
 margin-bottom: 0px;
 justify-self: center;
@@ -33,7 +29,7 @@ margin: 0 auto
   width: 48px;
   height: 3px;
   border-radius: 2px;
-  background-color: #E25821;
+  background-color: $color-primary;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -79,8 +75,8 @@ margin: 0 auto
 input {
   height: 46px;
   border-radius: 10px;
-  border-color: #E25821;
-  background-color: #F8F4EE;
+  border-color: $color-primary;
+  background-color: $color-light;
   margin-top: 18px;
   margin-bottom: 18px;
 }
@@ -106,6 +102,6 @@ form {
   width: 200px;
   height: 50px;
   border-radius: 20px;
-  background-color: #E25821;
+  background-color: $color-light;
   border-color: none;
 }

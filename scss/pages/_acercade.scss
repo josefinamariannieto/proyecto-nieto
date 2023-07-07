@@ -1,4 +1,4 @@
-.section__acerca {
+.acerca {
   width: 80%;
   height: 500px;
   min-width: 290px;
@@ -10,6 +10,10 @@
   justify-content: center;
   justify-self: center;
   text-align: center;
+
+  &__subtitulo{
+  color:$color-primary;
+}
 }
 
 .carrusel {
@@ -17,31 +21,31 @@
   height: auto;
 }
 
-.acercade__parrafo {
+.acerca__parrafo {
   width: 80%;
   max-width: 1000px;
   height: 600px;
   font-size: 1rem;
   line-height: 2rem;
   margin: 0 auto;
-  padding-top: 2rem;
-  
+  padding-top: 2rem;  
   display: flex;
   align-items: center;
+
+    p {
+      text-align: center;
+    }  
 }
 
-.acercade__parrafo p {
-  text-align: center;
-}
 
 
 @media (min-width: 768px) and (orientation:landscape) {
 
-  .section__acerca {
+  .acerca {
     height: 800px;
   }
 
-  .acercade__parrafo {
+  .acerca__parrafo {
     width: 80%;
     max-width: 1000px;
     height: 400px;
@@ -50,7 +54,7 @@
 
 
 @media (min-width: 1200px) and (orientation:landscape) {
-  .section__acerca {
+  .acerca {
     height: 900px;
   }
 }
