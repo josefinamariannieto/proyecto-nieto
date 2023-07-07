@@ -55,25 +55,25 @@ header {
     .navbar-collapse {
       width: 60%;
       background-color: $color-light;
-    }
-
-    .contacto {
-      color: $color-acentotomato;
-      background-color: $color-bg-secondary;
-      justify-content: end;
-      font-weight: 500;
-      padding-right: 3rem;
-      padding-left: 3rem;
-      border-radius: 2rem;
-      text-align: center;
-
-      &:hover {
-        color: $color-bg-container;
-        font-weight: 500;
-      }
     }   
   }
 }
+
+.contacto {
+  color: $color-acentotomato;
+  background-color: $color-bg-secondary;
+  justify-content: end;
+  font-weight: 500;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-radius: 2rem;
+  text-align: center;
+
+  &:hover {
+    color: $color-bg-container;
+    font-weight: 500;
+  }
+}   
 
  .buscar__campo {
     display: none;

@@ -278,7 +278,8 @@ header nav .navbar-collapse {
   width: 60%;
   background-color: #F8F4EE;
 }
-header nav .contacto {
+
+.contacto {
   color: #C04526;
   background-color: #E8E0D7;
   justify-content: end;
@@ -288,7 +289,7 @@ header nav .contacto {
   border-radius: 2rem;
   text-align: center;
 }
-header nav .contacto:hover {
+.contacto:hover {
   color: #BB8F70;
   font-weight: 500;
 }
@@ -370,7 +371,7 @@ header nav .contacto:hover {
   margin: 0 auto;
 }
 
-subtitulocontacto__contenedor {
+.subtitulocontacto__contenedor {
   margin-bottom: 50px;
 }
 
