@@ -51,6 +51,10 @@ p {
  color: $color-dark;
 }
 
+body {
+  background-color: $color-light;
+}
+
 main {
   width: 100%;
   background-color: $color-light;
@@ -60,7 +64,6 @@ main {
 
 .titulo__seccion {
   width: 100%;
-  color: $color-primary;
-  padding-top: 3.75rem;
+  color: $color-primary;  
   text-align: center;
 }

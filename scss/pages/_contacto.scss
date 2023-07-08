@@ -1,95 +1,80 @@
-.formulario__seccion {
-  width: 1200px;
-  height: 600px;
+.contacto {
+  width: 20rem;
+  max-width: 32rem;
+  height: 35rem;
   display: grid;
-  grid-template-rows: 1fr 1fr 5fr;
+  grid-template-rows: 0.5fr 0.5fr 3.5fr;
   justify-self: center;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 2rem auto;
+
+    &__formulario {
+      width: 20rem;
+      display: grid;
+      height: 25rem;
+      grid-template-rows: 1fr 1fr 4fr 1fr;
+
+      .input1 {
+        width: 100%;
+        height: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .input1__nombre {
+          width: auto;
+          height: 50px;
+          margin-top: 0px;
+          margin-bottom: 18px;
+        }
+
+        .input1__telefono {
+          width: auto;
+          height: 50px;
+          margin-top: 0px;
+          margin-bottom: 18px;
+        }
+      }
+    }
+
 }
 
 
-.subtitulocontacto__contenedor{
-  margin-bottom: 50px;
-}
-
-.linea-contacto1 {
-width: 60px;
-height: 3px;
-border-radius: 2px;
-background-color: $color-primary;
-margin-top: 0px;
-margin-bottom: 0px;
-justify-self: center;
-margin: 0 auto
-}
-
-.linea-contacto2 {
-  width: 48px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: $color-primary;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.formulario-contacto {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-datoscontacto1 {
-  width: 600px;
-  height: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.input-nombre {
-  width: 290px;
-  height: 50px;
-  margin-top: 0px;
-  margin-bottom: 18px;
-}
-
-.input-telefono {
-  width: 290px;
-  height: 50px;
-  margin-top: 0px;
-  margin-bottom: 18px;
-}
-
-.input-email {
-  width: 600px;
-  height: 50px;
-  margin-bottom: 18px;
-}
-
-.input-mensaje {
-  width: 600px;
-  height: 170px;
-}
-
-input {
-  height: 46px;
-  border-radius: 10px;
-  border-color: $color-primary;
-  background-color: $color-light;
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-
-form {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.input-email-msj-boton {
+.input2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .input2__email {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 18px;
+  }
+
+  .input2__mensaje {
+    width: 100%;
+    height: 170px;
+  }
+  
+  .input2__boton {
+    color: $color-dark;
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: $color-primary;
+    border-color: $color-primary ;
+  }
+}
+
+input {
+  border-radius: 10px;
+  border-color: $color-bg-container;
+  color: $color-dark; 
+  border-width: 2px;
+  background-color: $color-light;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .imagen-icono {
@@ -98,10 +83,29 @@ form {
   align-self: center;
 }
 
-.boton-enviar {
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: $color-light;
-  border-color: none;
+
+
+
+.subtitulo__contenedor {
+  margin-bottom: 50px;
+}
+
+.linea-contacto1 {
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: $color-primary;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-self: center;
+  margin: 0 auto
+}
+
+.linea-contacto2 {
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: $color-primary;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

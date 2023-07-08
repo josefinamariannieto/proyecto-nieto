@@ -1,60 +1,94 @@
-.acerca {
-  width: 80%;
-  height: 500px;
+.acerca {  
+  width: 90%;
+  height: 70rem;
   min-width: 290px;
   margin: 0 auto;
+  padding: 1rem 0;
   display: grid;
-  grid-template-rows: 2fr 2fr 4fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 4fr;
   align-items: center;
   justify-items: center;
   justify-content: center;
   justify-self: center;
   text-align: center;
 
-  &__subtitulo{
-  color:$color-primary;
-}
-}
+    &__subtitulo{
+    color:$color-primary;
+    font-size: x-large;  
+    }
 
-.carrusel {
-  width: 100%;
-  height: auto;
+    &__parrafo {
+      width: 80%;
+      max-width: 1000px;
+      height: 35rem;  
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 1fr 1fr 4fr;
+      align-items: center;
+        
+        h3{
+          font-size: medium;
+          color: $color-bg-container;
+        }
+    
+        p {
+          text-align: center;
+          font: $paragraph-font;          
+        }  
+    }
+
+    .carrusel {
+      width: 80%;
+      height: auto;
+      max-width: 24rem;
+    }
 }
-
-.acerca__parrafo {
-  width: 80%;
-  max-width: 1000px;
-  height: 600px;
-  font-size: 1rem;
-  line-height: 2rem;
-  margin: 0 auto;
-  padding-top: 2rem;  
-  display: flex;
-  align-items: center;
-
-    p {
-      text-align: center;
-    }  
-}
-
 
 
 @media (min-width: 768px) and (orientation:landscape) {
 
-  .acerca {
-    height: 800px;
-  }
+    .acerca {
+    height: 75rem;
+    grid-template-rows: 1fr 1fr 4fr 6fr;
 
-  .acerca__parrafo {
-    width: 80%;
-    max-width: 1000px;
-    height: 400px;
-  }
+      .carrusel {
+        width: 60%;
+        max-width: 30rem;
+      }
+
+      &__subtitulo{
+        color:$color-primary;
+        font-size: xx-large;
+      }
+          
+      &__parrafo {
+        width: 80%;
+        max-width: 1000px;
+        height: 22rem;
+        margin: 4rem auto;
+      }
+    }    
 }
+
 
 
 @media (min-width: 1200px) and (orientation:landscape) {
+
   .acerca {
-    height: 900px;
-  }
+    height: 80rem;
+    grid-template-rows: 1.5fr 1.5fr 4fr 6fr;
+
+    .carrusel {
+      width: 60%;
+      max-width: 50rem;
+    }
+
+    &__parrafo {
+      width: 80%;
+      max-width: 1000px;
+      height: auto;
+      margin: 4rem auto;
+    }
+  } 
 }
+
