@@ -1,111 +1,142 @@
 .contacto {
   width: 20rem;
-  max-width: 32rem;
-  height: 35rem;
+  height: 33rem;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 3.5fr;
   justify-self: center;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 1rem auto;
 
-    &__formulario {
+  &__linea1 {
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $color-primary;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-self: center;
+    margin: 0 auto
+  }
+
+  &__linea2 {
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: $color-primary;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &__formulario {
+    width: 20rem;
+    height: 23rem;
+    display: grid;
+    grid-template-rows: 1fr 3.5fr;
+
+    input {
+      border-radius: 10px;
+      border-color: $color-bg-container;
+      color: $color-dark;
+      border-width: 2px;
+      background-color: $color-light;     
+    }
+
+    .input1 {
       width: 20rem;
+      height: 3rem;
       display: grid;
-      height: 25rem;
-      grid-template-rows: 1fr 1fr 4fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 0.2rem;
 
-      .input1 {
-        width: 100%;
-        height: 2rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      &__nombre {
+        width: 9.9rem;
+        height: 3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
 
-        .input1__nombre {
-          width: auto;
-          height: 50px;
-          margin-top: 0px;
-          margin-bottom: 18px;
-        }
-
-        .input1__telefono {
-          width: auto;
-          height: 50px;
-          margin-top: 0px;
-          margin-bottom: 18px;
-        }
+      &__telefono {
+        width: 9.9rem;
+        height: 3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
       }
     }
 
+    .input2 {
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__email {
+        width: 20rem;
+        height: 50px;
+        margin-bottom: 0.75rem;
+      }
+
+      &__mensaje {
+        width: 20rem;
+        height: 10rem;
+      }
+
+      &__boton {
+        color: $color-dark;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 1rem;
+        background-color: $color-primary;
+        border-color: $color-primary;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
 
-.input2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  .input2__email {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 18px;
-  }
+@media (min-width: 768px) and (orientation:landscape) {
 
-  .input2__mensaje {
-    width: 100%;
-    height: 170px;
-  }
+  .contacto {
+    width: 26rem;
+    height: 33rem;
+        
+   
+    &__formulario {
+      width: 26rem;
+      height: 29rem;    
+        
+      .input1 {
+        width: 26rem;  
+
+        &__nombre {
+        width: 12.9rem;        
+        }
   
-  .input2__boton {
-    color: $color-dark;
-    width: 50%;
-    height: 50px;
-    border-radius: 20px;
-    background-color: $color-primary;
-    border-color: $color-primary ;
+        &__telefono {
+          width: 12.9rem;          
+        }
+      }
+  
+      .input2 {
+        width: 26rem;        
+  
+        &__email {
+          width: 26rem;         
+        }
+  
+        &__mensaje {
+          width: 26rem;
+          height: 15rem;
+        }
+  
+        &__boton {          
+          width: 15rem;
+          height: 3.5rem;          
+        }
+      }
+    }
   }
-}
-
-input {
-  border-radius: 10px;
-  border-color: $color-bg-container;
-  color: $color-dark; 
-  border-width: 2px;
-  background-color: $color-light;
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-
-.imagen-icono {
-  width: 24px;
-  height: 24px;
-  align-self: center;
-}
-
-
-
-
-.subtitulo__contenedor {
-  margin-bottom: 50px;
-}
-
-.linea-contacto1 {
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: $color-primary;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  justify-self: center;
-  margin: 0 auto
-}
-
-.linea-contacto2 {
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: $color-primary;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
