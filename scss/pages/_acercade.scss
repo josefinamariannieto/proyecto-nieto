@@ -1,11 +1,10 @@
 .acerca {  
   width: 90%;
-  height: 70rem;
+  height: 65rem;
   min-width: 290px;
   margin: 0 auto;
-  padding: 1rem 0;
   display: grid;
-  grid-template-rows: 0.5fr 0.5fr 2fr 4fr;
+  grid-template-rows: 0.25fr 0.25fr 2fr 3.5fr;
   align-items: center;
   justify-items: center;
   justify-content: center;
@@ -18,12 +17,12 @@
     }
 
     &__parrafo {
-      width: 80%;
+      width: 95%;
       max-width: 1000px;
-      height: 35rem;  
+      height: 32rem;  
       margin: 0 auto;
       display: grid;
-      grid-template-rows: 1fr 1fr 4fr;
+      grid-template-rows: 1fr 1fr 5fr;
       align-items: center;
         
         h3{
@@ -38,7 +37,7 @@
     }
 
     .carrusel {
-      width: 80%;
+      width: 95%;
       height: auto;
       max-width: 24rem;
     }
@@ -48,12 +47,13 @@
 @media (min-width: 768px) and (orientation:landscape) {
 
     .acerca {
-    height: 75rem;
+    height: 65rem;
     grid-template-rows: 1fr 1fr 4fr 6fr;
 
       .carrusel {
-        width: 60%;
+        width: 80%;
         max-width: 30rem;
+        margin-top: 2rem;
       }
 
       &__subtitulo{
@@ -61,10 +61,10 @@
         font-size: xx-large;
       }
           
-      &__parrafo {
-        width: 80%;
-        max-width: 1000px;
-        height: 22rem;
+      .acerca__parrafo {
+        width: 95%;
+        max-width: 1200px;
+        height: 23rem;
         margin: 4rem auto;
       }
     }    

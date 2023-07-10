@@ -1,5 +1,10 @@
-.navbar-brand{
-  margin: 2rem;
+nav {
+  font: $subtitle-font;
+}
+
+.navbar-brand {
+  height: 9rem;
+  padding: 2rem 0;
 }
 
 .logo {
@@ -11,53 +16,54 @@
 }
 
 header {
-  height: 9.1rem;
+  height: 9rem;
   background-color: $color-light;
- 
 
-  .navbar {
-    height: 5rem;
-    --bs-navbar-padding-X: 0;
-    --bs-navbar-padding-y: 0;
-  }
 
-  .container{
+  .container {
     width: 100%;
     max-width: 100vw;
-    height: 9rem;
-    padding: 0;
-    margin: 0;
+    height: 100%;
+    align-self: center;
     background-color: $color-light;
-  }
-  
-  .navbar-toggler{
-    margin-left: 2rem;
+    padding: 0;
   }
 
+  .navbar-toggler {
+    margin: 0 2rem;
+  }
+
+  .nav-item {
+    background-color: $color-light;
+  }
 
   .nav-link {
     color: $color-dark;
-    padding-left: 3rem;
-    
+    padding-left: 1rem;  
+    margin-left: 2rem;  
+    margin-right: 3rem;
+    border-radius: 0.5rem;
+
     &:hover {
-      color: $color-bg-container;
+      color: $color-acentotomato;
       font-weight: 500;
     }
   }
 
   .contacto {
-    color: $color-acentotomato;
-    justify-content: end;
+    color: $color-primary;
     font-weight: 500;
     text-justify: center;
-    padding: 2rem 3rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 
     &:hover {
       color: $color-bg-container;
-      font-weight: 500;
+      font-weight: 500;    
     }
   }
-  
+
   .navbar-toggler {
     border-style: outset;
     color: $color-dark;
@@ -72,80 +78,93 @@ header {
 
   .navbar-collapse {
     width: 100vw;
-    height: 30rem;
+    height: auto;
     background-color: $color-light;
-  }
+    margin-top: 0;
+    margin-right: 20vw;
+    border-radius: 4px;
+  } 
+}
 
-  nav {
-    font: $subtitle-font;
-
-    .activo {
-      color: $color-light;
-      background-color: $color-bg-container;
-    }
-  }     
-  }
-
+.navbar {
+  height: 9rem;
+  --bs-navbar-padding-X: 0;
+  --bs-navbar-padding-y: 0;
+}
 
 
 @media (min-width: 1200px) and (orientation:landscape) {
 
   header {
     height: 11rem;
-    padding: 5rem auto; 
-          
-    .container{
-      width: 98%;
-      height: 9rem; 
-      margin: 0 auto;          
-    }  
-  
-    .activo {
-      color: $color-primary;
-      background-color: $color-light;
-    }
+    padding: 5rem auto;
 
-    .navbar-collapse {        
-      height: 9rem;
-      padding-top: 3rem;   
+    .navbar-brand {
+      padding: 1rem;
     }
     
-    ul .navbar-nav{
+    .container {
+      width: 98%;
+      height: 9rem;
+      margin: 0 auto;
+    }
+
+    .navbar-collapse {
+      width: 100vw;
+      height: 9rem;
+      padding-top: 1rem;      
+      margin-right: 1rem;     
+    }
+
+    ul .navbar-nav {
       width: 100%;
       height: 9rem;
       justify-content: center;
-      align-items: center;
+      align-items: center;     
     }
-            
-      .nav-item {      
-        height: 4rem;
-        margin: 0.5rem;
-        justify-content: center;
-        align-items: center;
-        
-        .nav-link {
-          width: 100%;
-          height: 100%; 
-          border-radius: 4px;
-          text-align: center;          
-        } 
-     }
+
+    .nav-item {
+      height: 4rem;
+      margin: 0.5rem 0;
+      justify-items:start;
+      align-items: center;
+      padding-left: 0;
+
+      .nav-link {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        text-align: center;
+        margin-left: 0;        
+      }
+    }
+
+    .activo {
+      color: $color-primary;
+    }
 
     .contacto {
-      width: 10rem;
-      height: 4rem; 
+      width: 12rem;
+      height: 4rem;
       background-color: $color-bg-secondary;
-      align-self: center;
-      margin: 1.5rem 0.5rem;
-      padding: 1rem;
+      align-self: center; 
+      padding: 0.5rem 0;     
+      margin: 1.5rem 1rem;
       font-weight: 500;
       border-radius: 2rem;
-      text-align: center;    
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+
+      &:hover {
+        color: $color-light; 
+        background-color: $color-bg-container;   
+      }   
       
-      &:hover{
-        color: $color-acentotomato;
+      &__activo {
+        color: $color-bg-secondary;
+        background-color: $color-primary;
       }
-      } 
-  
-}
+    }    
+  }
 }

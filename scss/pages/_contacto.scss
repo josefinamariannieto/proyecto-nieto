@@ -1,15 +1,16 @@
-.contacto {
+.contactar {
   width: 20rem;
-  height: 33rem;
+  height: 32rem;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 3.5fr;
   justify-self: center;
   align-items: center;
   justify-content: center;
-  margin: 1rem auto;
-
+  margin: 0 auto;
+  padding: 0;
+  
   &__linea1 {
-    width: 20px;
+    width: 1.5rem;
     height: 3px;
     border-radius: 2px;
     background-color: $color-primary;
@@ -20,10 +21,11 @@
   }
 
   &__linea2 {
-    width: 20px;
+    width: 1.5rem;
     height: 3px;
     border-radius: 2px;
     background-color: $color-primary;
+    justify-self:start;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -39,7 +41,7 @@
       border-color: $color-bg-container;
       color: $color-dark;
       border-width: 2px;
-      background-color: $color-light;     
+      background-color: $color-light; 
     }
 
     .input1 {
@@ -84,7 +86,7 @@
       &__boton {
         color: $color-dark;
         width: 10rem;
-        height: 3rem;
+        height: 2.9rem;
         border-radius: 1rem;
         background-color: $color-primary;
         border-color: $color-primary;
@@ -93,17 +95,23 @@
       }
     }
   }
+
+  .contactar__subtitulo{
+    padding: 1rem 0;
+  }
 }
 
+// input::placeholder{
+//   margin-left: 1rem;
+// }
 
 
 @media (min-width: 768px) and (orientation:landscape) {
 
-  .contacto {
+  .contactar {
     width: 26rem;
-    height: 33rem;
-        
-   
+    height: 43rem;        
+
     &__formulario {
       width: 26rem;
       height: 29rem;    

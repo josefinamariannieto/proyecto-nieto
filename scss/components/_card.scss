@@ -1,77 +1,78 @@
 .cards__contenedor {
   width: 100%;
-  height: 1000px;
-  min-width: 300px;
+  height: 62.5rem;
+  min-width: 19rem;
   margin-top: 3rem;
-  margin-bottom: 2.5rem;      
+  margin-bottom: 2.5rem;
   display: grid;
-  grid-template-columns: minmax(290px, 600px);
-  grid-template-rows: repeat(3, minmax(330px, 460px));
-  justify-self: center;    
+  grid-template-columns: minmax(19rem, 37.5rem);
+  grid-template-rows: repeat(3, minmax(20.5rem, 29rem));
+  justify-self: center;
+  justify-content: space-around;
   row-gap: 1rem;
 }
 
-.proyecto1__card {
-width: 100%;
-height: 100%;
-border-radius: 1rem;
-background-image: url(../img/vista-lateral-mano-sosteniendo-pieza-papel.jpg);
-background-size: 100% 100%;
-object-fit: cover;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-padding-top: 10.6rem;
-padding-bottom: 6.2rem;
-}
+  .proyecto1__card {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-image: url(../img/vista-lateral-mano-sosteniendo-pieza-papel.jpg);
+    background-size: 100% 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10.6rem;
+    padding-bottom: 6.2rem;
+  }
 
-.proyecto2__card {
-width: 100%;
-height: 100%;
-border-radius: 1rem;
-background-image: url(../img/manos-alto-angulo-sosteniendo-papel.jpg);
-background-size: 100% 100%;
-object-fit: cover;
-padding-top: 10.6rem;
-padding-bottom: 6.25rem;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-}
+  .proyecto2__card {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-image: url(../img/manos-alto-angulo-sosteniendo-papel.jpg);
+    background-size: 100% 100%;
+    object-fit: cover;
+    padding-top: 10.6rem;
+    padding-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.proyecto3__card {
-width: 100%;
-height: 100%;
-border-radius: 1rem;
-background-image: url(../img/mujer-haciendo-interfaz-aplicacion-moderna.jpg);
-background-size: 100% 100%;
-object-fit: cover;
-padding-top: 10.6rem;
-padding-bottom: 6.25rem;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-}
+  .proyecto3__card {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-image: url(../img/mujer-haciendo-interfaz-aplicacion-moderna.jpg);
+    background-size: 100% 100%;
+    object-fit: cover;
+    padding-top: 10.6rem;
+    padding-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
 .proyecto__titulo {
-color: #252426;
+  color: #252426;
 }
 
 .btn {
-color: $color-secondary;
-font-family: $font-secondary;
-font-size: 1.5rem;
-width: 80%;
-max-width: 360px;
-height: 3.1rem;
-border-radius: 20px;
-background-color: $color-light;
-text-align: center;
-padding-top: 0.6rem;
-margin-top: 1.8rem;
+  color: $color-secondary;
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  width: 80%;
+  max-width: 20rem;
+  height: 3.1rem;
+  border-radius: 20px;
+  background-color: $color-light;
+  text-align: center;
+  padding-top: 0.6rem;
+  margin-top: 1.8rem;
 }
 
 
@@ -94,10 +95,10 @@ margin-top: 1.8rem;
       width: 100%;
       height: 100%;
     }
-  
+
     .proyecto1__card {
-    grid-column: span 1;
-    grid-row: span 1;
+      grid-column: span 1;
+      grid-row: span 1;
+    }
   }
-}
 }
