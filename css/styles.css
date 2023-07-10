@@ -18,11 +18,11 @@ img {
 }
 
 h1 {
-  font: normal 0.9rem/1.5 "Capriola", sans-serif;
+  font: normal 1rem/1.5 "Capriola", sans-serif;
 }
 
 h2 {
-  font: normal 2.1rem/1.5 "Sacramento", cursive;
+  font: normal 2.3rem/1.5 "Sacramento", cursive;
 }
 
 h3 {
@@ -91,6 +91,14 @@ main {
   padding-top: 10.6rem;
   padding-bottom: 6.2rem;
 }
+.proyecto1__card h1 {
+  color: #252426;
+  font-size: medium;
+  font-weight: 500;
+}
+.proyecto1__card:hover {
+  background-color: #F3BA03;
+}
 
 .proyecto2__card {
   width: 100%;
@@ -106,6 +114,11 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+.proyecto2__card h1 {
+  color: #252426;
+  font-size: medium;
+  font-weight: 500;
+}
 
 .proyecto3__card {
   width: 100%;
@@ -114,36 +127,60 @@ main {
   background-image: url(../img/mujer-haciendo-interfaz-aplicacion-moderna.jpg);
   background-size: 100% 100%;
   object-fit: cover;
-  padding-top: 10.6rem;
+  padding-top: 10rem;
   padding-bottom: 6.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-
-.proyecto__titulo {
+.proyecto3__card h1 .proyecto__titulo {
   color: #252426;
+  font-size: medium;
+  font-weight: 500;
 }
 
 .btn {
   color: #F3BA03;
-  font-family: "Sacramento", cursive;
-  font-size: 1.5rem;
+  font: normal 2.3rem/1.5 "Sacramento", cursive;
+  font-size: x-large;
   width: 80%;
-  max-width: 20rem;
-  height: 3.1rem;
-  border-radius: 20px;
+  max-width: 16rem;
+  height: 3.2rem;
+  border-radius: 1.5rem;
   background-color: #F8F4EE;
   text-align: center;
-  padding-top: 0.6rem;
   margin-top: 1.8rem;
+}
+.btn:hover {
+  color: #F8F4EE;
+  background-color: #F3BA03;
+  width: 102%;
+  transition: all 4ms;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
   .proyecto1__card {
     grid-column: span 2;
     grid-row: span 2;
+  }
+  .proyecto1__card:hover {
+    width: 102%;
+    height: 102%;
+    transition: all 2ms;
+  }
+  .proyecto2__card:hover {
+    width: 102%;
+    height: 102%;
+    transition: all 2ms;
+  }
+  .proyecto3__card:hover {
+    width: 102%;
+    height: 102%;
+    transition: all 2ms;
+  }
+  .btn {
+    font-size: xx-large;
   }
 }
 @media (min-width: 1200px) and (orientation: landscape) {
@@ -161,6 +198,9 @@ main {
     grid-column: span 1;
     grid-row: span 1;
   }
+  .btn {
+    font-size: xx-large;
+  }
 }
 footer {
   width: 100%;
@@ -171,20 +211,6 @@ footer {
   justify-items: center;
   align-items: center;
   align-content: center;
-}
-footer .icono__card {
-  display: grid;
-  flex-wrap: nowrap;
-  background-color: #F3BA03;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  place-items: center;
-}
-footer .icono__card i {
-  color: #F8F4EE;
-  font-size: 1rem;
-  justify-content: center;
 }
 footer a {
   display: none;
@@ -204,20 +230,34 @@ footer .redes {
   justify-items: center;
   align-items: center;
 }
+footer .redes .icono__card {
+  display: grid;
+  flex-wrap: nowrap;
+  background-color: #F3BA03;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  place-items: center;
+}
+footer .redes .icono__card i {
+  color: #F8F4EE;
+  font-size: 1rem;
+  justify-content: center;
+}
 footer .footer__info {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(2, 4vh);
   justify-content: center;
 }
-footer .footer__texto {
+footer .footer__info .footer__texto {
   font-size: 0.75rem;
   font-weight: 400;
   color: #C04526;
   text-align: center;
   grid-row: 1/2;
 }
-footer .footer__copy {
+footer .footer__info .footer__copy {
   font-size: 0.75rem;
   font-weight: 400;
   color: #C04526;
@@ -231,36 +271,24 @@ footer .footer__copy {
   }
 }
 @media (min-width: 1200px) and (orientation: landscape) {
-  .footer__redes {
+  .redes {
     max-width: 50%;
+  }
+  .redes a {
+    display: block;
   }
   .redes__card {
     display: flex;
   }
-  footer a {
-    display: block;
-  }
 }
-nav {
-  font: normal 2.1rem/1.5 "Sacramento", cursive;
-}
-
-.navbar-brand {
-  height: 9rem;
-  padding: 2rem 0;
-}
-
-.logo {
-  width: 20vw;
-  max-width: 110px;
-  height: auto;
-  justify-self: center;
-  align-self: center;
-}
-
 header {
   height: 9rem;
   background-color: #F8F4EE;
+}
+header .navbar {
+  height: 9rem;
+  --bs-navbar-padding-X: 0;
+  --bs-navbar-padding-y: 0;
 }
 header .container {
   width: 100%;
@@ -272,12 +300,40 @@ header .container {
 }
 header .navbar-toggler {
   margin: 0 2rem;
+  border-style: outset;
+  color: #252426;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+header .navbar-toggler__icon {
+  color: #E25821;
+  order: 1;
+}
+header .navbar-brand {
+  height: 9rem;
+  padding: 2rem 0;
+}
+header .logo {
+  width: 20vw;
+  max-width: 7rem;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+}
+header .navbar-collapse {
+  width: 100vw;
+  height: auto;
+  background-color: #F8F4EE;
+  margin-top: 0;
+  margin-right: 20vw;
+  border-radius: 4px;
 }
 header .nav-item {
   background-color: #F8F4EE;
 }
 header .nav-link {
   color: #252426;
+  font: normal 2.3rem/1.5 "Sacramento", cursive;
   padding-left: 1rem;
   margin-left: 2rem;
   margin-right: 3rem;
@@ -289,39 +345,23 @@ header .nav-link:hover {
 }
 header .contacto {
   color: #E25821;
+  background-color: #F8F4EE;
   font-weight: 500;
-  text-justify: center;
   padding-left: 1rem;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 41rem;
 }
 header .contacto:hover {
   color: #BB8F70;
   font-weight: 500;
 }
-header .navbar-toggler {
-  border-style: outset;
-  color: #252426;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-header .navbar-toggler__icon {
+header .activo {
   color: #E25821;
-  order: 1;
+  background-color: #E8E0D7;
 }
-header .navbar-collapse {
-  width: 100vw;
-  height: auto;
-  background-color: #F8F4EE;
-  margin-top: 0;
-  margin-right: 20vw;
-  border-radius: 4px;
-}
-
-.navbar {
-  height: 9rem;
-  --bs-navbar-padding-X: 0;
-  --bs-navbar-padding-y: 0;
+header .contacto__activo {
+  color: #F8F4EE;
+  background-color: #E25821;
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
@@ -329,13 +369,22 @@ header .navbar-collapse {
     height: 11rem;
     padding: 5rem auto;
   }
-  header .navbar-brand {
-    padding: 1rem;
+  header .activo {
+    color: #E25821;
+    background-color: #F8F4EE;
   }
   header .container {
     width: 98%;
     height: 9rem;
     margin: 0 auto;
+  }
+  header .navbar-brand {
+    padding: 1rem;
+  }
+  header .navbar-brand:hover {
+    width: 10rem;
+    height: 10rem;
+    transition: all 2ms;
   }
   header .navbar-collapse {
     width: 100vw;
@@ -361,10 +410,15 @@ header .navbar-collapse {
     height: 100%;
     border-radius: 4px;
     text-align: center;
-    margin-left: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  header .activo {
-    color: #E25821;
+  header .nav-item .nav-link:hover {
+    color: #C04526;
+    font-weight: 500;
+    width: 105%;
+    height: 105%;
+    transition: all 2ms;
   }
   header .contacto {
     width: 12rem;
@@ -380,8 +434,13 @@ header .navbar-collapse {
     align-content: center;
   }
   header .contacto:hover {
+    width: 12.5rem;
+    height: 4.5rem;
     color: #F8F4EE;
     background-color: #BB8F70;
+    border-width: 0.3rem;
+    border-color: #F8F4EE;
+    transition: all 2ms;
   }
   header .contacto__activo {
     color: #E8E0D7;

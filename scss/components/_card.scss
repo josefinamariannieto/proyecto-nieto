@@ -12,75 +12,130 @@
   row-gap: 1rem;
 }
 
-  .proyecto1__card {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    background-image: url(../img/vista-lateral-mano-sosteniendo-pieza-papel.jpg);
-    background-size: 100% 100%;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10.6rem;
-    padding-bottom: 6.2rem;
+.proyecto1__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-image: url(../img/vista-lateral-mano-sosteniendo-pieza-papel.jpg);
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10.6rem;
+  padding-bottom: 6.2rem;
+
+  h1 {
+    color: $color-dark;
+    font-size: medium;
+    font-weight: 500;
   }
 
-  .proyecto2__card {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    background-image: url(../img/manos-alto-angulo-sosteniendo-papel.jpg);
-    background-size: 100% 100%;
-    object-fit: cover;
-    padding-top: 10.6rem;
-    padding-bottom: 6.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  &:hover {
+    background-color: $color-secondary;
   }
+}
 
-  .proyecto3__card {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    background-image: url(../img/mujer-haciendo-interfaz-aplicacion-moderna.jpg);
-    background-size: 100% 100%;
-    object-fit: cover;
-    padding-top: 10.6rem;
-    padding-bottom: 6.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.proyecto2__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-image: url(../img/manos-alto-angulo-sosteniendo-papel.jpg);
+  background-size: 100% 100%;
+  object-fit: cover;
+  padding-top: 10.6rem;
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    color: $color-dark;
+    font-size: medium;
+    font-weight: 500;
   }
+}
 
-.proyecto__titulo {
-  color: #252426;
+.proyecto3__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-image: url(../img/mujer-haciendo-interfaz-aplicacion-moderna.jpg);
+  background-size: 100% 100%;
+  object-fit: cover;
+  padding-top: 10rem;
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 .proyecto__titulo {
+    color: $color-dark;
+    font-size: medium;
+    font-weight: 500;
+  }
 }
 
 .btn {
   color: $color-secondary;
-  font-family: $font-secondary;
-  font-size: 1.5rem;
+  font: $subtitle-font;
+  font-size: x-large;
   width: 80%;
-  max-width: 20rem;
-  height: 3.1rem;
-  border-radius: 20px;
+  max-width: 16rem;
+  height: 3.2rem;
+  border-radius: 1.5rem;
   background-color: $color-light;
   text-align: center;
-  padding-top: 0.6rem;
   margin-top: 1.8rem;
-}
+
+  &:hover {
+    color: $color-light;
+    background-color: $color-secondary;
+    width: 102%;      
+    transition: all 4ms;
+    }
+  }
 
 
 @media (min-width: 768px) and (orientation:landscape) {
   .proyecto1__card {
     grid-column: span 2;
     grid-row: span 2;
+
+    &:hover {
+      width: 102%;
+      height: 102%; 
+      transition: all 2ms;
+    }
   }
+
+  .proyecto2__card {
+    
+    &:hover {
+      width: 102%;
+      height: 102%;  
+      transition: all 2ms;
+    }
+  }
+
+  .proyecto3__card {
+    
+    &:hover {
+      width: 102%;
+      height: 102%;  
+      transition: all 2ms;
+    }
+  }
+
+
+
+
+  .btn {
+    font-size: xx-large;
+  }  
 }
 
 
@@ -100,5 +155,9 @@
       grid-column: span 1;
       grid-row: span 1;
     }
+  }
+
+  .btn {
+    font-size: xx-large;
   }
 }
