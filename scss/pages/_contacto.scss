@@ -8,26 +8,30 @@
   justify-content: center;
   margin: 0 auto;
   padding: 0;
-  
+  z-index: 0;
+
   &__linea1 {
-    width: 1.5rem;
-    height: 3px;
-    border-radius: 2px;
-    background-color: $color-primary;
+    width: 3rem;    
+    border-width: 0.3rem;
+    border-radius: 0.1rem;
+    color: $color-primary;
     margin-top: 0px;
     margin-bottom: 0px;
     justify-self: center;
-    margin: 0 auto
+    margin: 0 auto;
+    z-index: 0;
   }
 
+
   &__linea2 {
-    width: 1.5rem;
-    height: 3px;
+    width: 3rem;    
+    border-width: 0.3rem;
     border-radius: 2px;
-    background-color: $color-primary;
-    justify-self:start;
+    color: $color-primary;
+    justify-self: start;
     margin-top: 0px;
     margin-bottom: 0px;
+    z-index: 0;
   }
 
   &__formulario {
@@ -40,8 +44,8 @@
       border-radius: 10px;
       border-color: $color-bg-container;
       color: $color-dark;
-      border-width: 2px;
-      background-color: $color-light; 
+      border-width: 0.1rem;
+      background-color: $color-light;
     }
 
     .input1 {
@@ -87,16 +91,16 @@
         color: $color-dark;
         width: 10rem;
         height: 2.9rem;
-        border-radius: 1rem;
-        background-color: $color-primary;
-        border-color: $color-primary;
+        border-radius: 1.5rem;
+        background-color: $color-bg-secondary; 
+        border-color: $color-bg-secondary;      
         margin-top: 1rem;
         margin-bottom: 1rem;
       }
     }
   }
 
-  .contactar__subtitulo{      
+  .contactar__subtitulo {
     padding: 1rem 0;
   }
 }
@@ -110,39 +114,45 @@
 
   .contactar {
     width: 26rem;
-    height: 43rem;        
+    height: 40rem;
 
     &__formulario {
       width: 26rem;
-      height: 29rem;    
-        
+      height: 30rem;
+
       .input1 {
-        width: 26rem;  
+        width: 26rem;
 
         &__nombre {
-        width: 12.9rem;        
+          width: 12.9rem;
+          margin-top: 0;
+          margin-bottom: 0;
         }
-  
+
         &__telefono {
-          width: 12.9rem;          
+          width: 12.9rem;
+          margin-top: 0;
+          margin-bottom: 0;
         }
       }
-  
+
       .input2 {
-        width: 26rem;        
-  
+        width: 26rem;
+
         &__email {
-          width: 26rem;         
+          width: 26rem;
         }
-  
+
         &__mensaje {
           width: 26rem;
           height: 15rem;
         }
-  
-        &__boton {          
+
+        &__boton {
           width: 15rem;
-          height: 3.5rem;          
+          height: 3.5rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
         }
       }
     }

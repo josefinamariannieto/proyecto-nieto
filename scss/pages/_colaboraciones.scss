@@ -9,7 +9,8 @@
 
   .subtitulo__seccion {
     text-align: center;
-    color: $color-primary;
+    color: $color-dark;
+    font-weight: 100;
   }
 
   &__informacion {
@@ -88,6 +89,10 @@
       align-items: center;
       text-align: center;
       padding-top: 2rem;
+
+      h1{
+        font-size: medium;
+      }
     }
 
 
@@ -109,12 +114,12 @@
 @media (min-width: 768px) {
 
   .colaboraciones {
-    height: 50rem;
-    grid-template-rows: 2fr 5fr;
+    height: 43rem;
+    grid-template-rows: 1.5fr 5.5fr;
 
     &__contenedor {
       height: 28rem;
-      margin: 3rem 0;
+      margin: 0;
 
       .colaboracion {
         display: grid;
@@ -129,6 +134,7 @@
         &__card {
           width: 100%;
           max-width: 40rem;
+          min-width: 21rem;
           height: 100%;
           max-height: 100%;
           margin-left: 0;
@@ -140,6 +146,7 @@
         &__imagen {
           width: 100%;
           max-width: 40rem;
+          min-width: 21rem;
           height: 100%;
           max-height: 100%;
           margin: auto 0;

@@ -4,7 +4,7 @@ $color-secondary:#F3BA03;
 $color-bg-container: #BB8F70;
 $color-bg-secondary: #E8E0D7;
 $color-dark: #252426;
-$color-light: #F8F4EE;
+$color-light: #faf8f4;
 $font-primary: 'Capriola', sans-serif;
 $font-secondary: 'Sacramento', cursive;
 $title-font: normal 1rem/1.5 'Capriola', sans-serif;
@@ -75,9 +75,5 @@ main {
 
   main{
     padding-top: 4rem;
-  }
-
-  .titulo__seccion {
-    font-size: large;     
   }
 }
