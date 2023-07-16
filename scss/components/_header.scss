@@ -41,6 +41,11 @@ header {
     height: auto;
     justify-self: center;
     align-self: center;
+
+    &:hover{
+      rotate: 360deg;
+      transition: rotate 5ms;
+    }
   }
 
   .navbar-collapse {

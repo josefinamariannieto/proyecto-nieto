@@ -15,7 +15,7 @@
     max-width: 25rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 290px);
+    grid-template-rows: repeat(6, 20rem);
     row-gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -28,16 +28,17 @@
   .proyectos {
     width: 92%;
     max-width: 75rem;
-    height: 90rem;
+    height: 70rem;
 
     &__contenedor {
-      max-width: 75rem;
-      height: 75rem;
+      max-width: 70rem;
+      height: 60rem;
       margin-top: 3rem;
       margin-bottom: 3rem;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 20rem);
       column-gap: 1rem;
+      padding: 0 2rem;
     }
   }
 }

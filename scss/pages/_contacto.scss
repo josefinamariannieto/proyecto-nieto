@@ -41,11 +41,15 @@
     grid-template-rows: 1fr 3.5fr;
 
     input {
+      font: $paragraph-font;
+      color: $color-dark;
       border-radius: 10px;
       border-color: $color-bg-container;
       color: $color-dark;
       border-width: 0.1rem;
       background-color: $color-light;
+      padding-left: 1rem;
+      
     }
 
     .input1 {
