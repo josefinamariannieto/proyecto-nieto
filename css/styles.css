@@ -919,15 +919,19 @@ header .contacto__activo {
   margin: auto auto;
 }
 .colaboraciones .contacto__red {
+  width: 8rem;
   height: 3rem;
-  display: flex;
   text-align: center;
   justify-items: center;
   align-items: center;
   margin: 0 auto;
 }
 .colaboraciones .contacto__red a {
+  width: 8rem;
   color: #252426;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 100%;
 }
 .colaboraciones .contacto__red .icono__card {
   display: grid;

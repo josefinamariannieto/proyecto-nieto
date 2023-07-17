@@ -31,15 +31,19 @@
   }
 
   .contacto__red {
+    width: 8rem;
     height: 3rem;
-    display: flex;
     text-align: center;
     justify-items: center;
     align-items: center;
     margin: 0 auto;
 
     a {
+      width: 8rem;
       color: $color-dark;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 100%;
     }
 
     .icono__card {
@@ -89,7 +93,7 @@
       text-align: center;
       padding-top: 2rem;
 
-      h1{
+      h1 {
         font-size: medium;
       }
     }
