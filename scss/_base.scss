@@ -1,14 +1,14 @@
-$color-primary: #E25821;
-$color-acentotomato: #C04526;
-$color-secondary:#F3BA03;
-$color-bg-container: #BB8F70;
+$color-primary: #12583E;
+$color-acentotomato: #465856;
+$color-secondary: #F3BA03;
+$color-bg-container: #465856;
 $color-bg-secondary: #E8E0D7;
 $color-dark: #252426;
 $color-light: #FBF9F7;
-$font-primary: 'Roboto Mono', monospace;
-$title-font: 500 1.1rem/1.5 'Roboto Mono', monospace;
-$subtitle-font: 400 1rem/1.5 'Roboto Mono', monospace;
-$paragraph-font: 400 0.8rem/2 'Roboto Mono', monospace;
+$font-primary: 'Capriola', sans-serif;
+$title-font: 500 1rem/1.5 'Capriola', sans-serif;
+$subtitle-font: 400 2.2rem/1.5 'Sacramento', cursive;
+$paragraph-font: 400 0.8rem/2 'Capriola', sans-serif;
 
 
 * {
@@ -32,7 +32,7 @@ img {
 
 
 h1 {
-  font: $title-font;  
+  font: $title-font;
 }
 
 h2 {
@@ -46,8 +46,8 @@ h3 {
 }
 
 p {
- font: $paragraph-font;
- color: $color-dark;
+  font: $paragraph-font;
+  color: $color-dark;
 }
 
 body {
@@ -59,20 +59,19 @@ main {
   background-color: $color-light;
   align-items: center;
   align-self: center;
-  padding-top: 2rem;  
+  padding-top: 2rem;
 }
 
 .titulo__seccion {
   width: 100%;
-  color: $color-primary;  
-  text-align: center; 
-  font-size: medium; 
-}
+  color: $color-primary;
+  text-align: center;
+ }
 
 
 @media (min-width: 768px) and (orientation:landscape) {
 
-  main{
+  main {
     padding-top: 4rem;
   }
 }

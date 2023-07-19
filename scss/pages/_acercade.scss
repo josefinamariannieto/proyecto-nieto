@@ -13,7 +13,6 @@
 
   &__subtitulo {
     color: $color-primary;
-    font-size: small;
   }
 
   &__parrafo {
@@ -40,12 +39,12 @@
     width: 95%;
     height: auto;
     max-width: 24rem;
-    border-radius: 1rem;   
+    border-radius: 1rem;
 
-    img{
+    img {
       border-radius: 1rem;
     }
-  }  
+  }
 }
 
 
@@ -63,7 +62,6 @@
 
     &__subtitulo {
       color: $color-primary;
-      font-size: medium;
     }
 
     &__parrafo {

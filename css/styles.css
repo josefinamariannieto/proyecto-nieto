@@ -19,21 +19,21 @@ img {
 }
 
 h1 {
-  font: 500 1.1rem/1.5 "Roboto Mono", monospace;
+  font: 500 1rem/1.5 "Capriola", sans-serif;
 }
 
 h2 {
-  font: 400 1rem/1.5 "Roboto Mono", monospace;
+  font: 400 2.2rem/1.5 "Sacramento", cursive;
 }
 
 h3 {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Capriola", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
 }
 
 p {
-  font: 400 0.8rem/2 "Roboto Mono", monospace;
+  font: 400 0.8rem/2 "Capriola", sans-serif;
   color: #252426;
 }
 
@@ -51,9 +51,8 @@ main {
 
 .titulo__seccion {
   width: 100%;
-  color: #E25821;
+  color: #12583E;
   text-align: center;
-  font-size: medium;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -135,7 +134,7 @@ h1 .titulo__seccion {
 .btn {
   color: #F3BA03;
   background-color: #FBF9F7;
-  font: 400 1rem/1.5 "Roboto Mono", monospace;
+  font: 400 2.2rem/1.5 "Sacramento", cursive;
   font-size: medium;
   font-weight: 500;
   width: 60%;
@@ -228,7 +227,7 @@ footer {
 }
 footer a {
   display: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Capriola", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   color: #252426;
@@ -267,14 +266,14 @@ footer .footer__info {
 footer .footer__info .footer__texto {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #C04526;
+  color: #465856;
   text-align: center;
   grid-row: 1/2;
 }
 footer .footer__info .footer__copy {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #C04526;
+  color: #465856;
   text-align: center;
   grid-row: 2/3;
 }
@@ -320,7 +319,7 @@ header .navbar-toggler {
   font-weight: 400;
 }
 header .navbar-toggler__icon {
-  color: #E25821;
+  color: #12583E;
   order: 1;
 }
 header .navbar-brand {
@@ -330,6 +329,7 @@ header .navbar-brand {
 header .logo {
   width: 20vw;
   max-width: 7rem;
+  opacity: 70%;
   height: auto;
   justify-self: center;
   align-self: center;
@@ -352,18 +352,18 @@ header .nav-item {
 }
 header .nav-link {
   color: #252426;
-  font: 400 1rem/1.5 "Roboto Mono", monospace;
+  font: 400 2.2rem/1.5 "Sacramento", cursive;
   padding-left: 1rem;
   margin-left: 2rem;
   margin-right: 3rem;
   border-radius: 0.5rem;
 }
 header .nav-link:hover {
-  color: #C04526;
+  color: #465856;
   font-weight: 500;
 }
 header .contacto {
-  color: #E25821;
+  color: #12583E;
   background-color: #FBF9F7;
   font-weight: 500;
   padding-left: 1rem;
@@ -371,16 +371,16 @@ header .contacto {
   margin-bottom: 41rem;
 }
 header .contacto:hover {
-  color: #BB8F70;
+  color: #465856;
   font-weight: 500;
 }
 header .activo {
-  color: #E25821;
+  color: #12583E;
   background-color: #E8E0D7;
 }
 header .contacto__activo {
   color: #FBF9F7;
-  background-color: #BB8F70;
+  background-color: #465856;
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
@@ -396,7 +396,7 @@ header .contacto__activo {
     z-index: index 10;
   }
   header .activo {
-    color: #E25821;
+    color: #12583E;
     background-color: #FBF9F7;
   }
   header .container {
@@ -435,7 +435,7 @@ header .contacto__activo {
     margin-right: 1rem;
   }
   header .nav-item .nav-link:hover {
-    color: #C04526;
+    color: #465856;
     font-weight: 500;
     width: 105%;
     height: 105%;
@@ -444,7 +444,7 @@ header .contacto__activo {
   header .contacto {
     width: 12rem;
     height: 4rem;
-    color: #C04526;
+    color: #465856;
     align-self: center;
     padding: 0.5rem 0;
     margin: 1.5rem 1rem;
@@ -464,7 +464,7 @@ header .contacto__activo {
     transition: all 2ms;
   }
   header .contacto__activo {
-    color: #E25821;
+    color: #12583E;
     background-color: #E8E0D7;
   }
 }
@@ -482,8 +482,7 @@ header .contacto__activo {
   text-align: center;
 }
 .acerca__subtitulo {
-  color: #E25821;
-  font-size: small;
+  color: #12583E;
 }
 .acerca__parrafo {
   width: 95%;
@@ -496,11 +495,11 @@ header .contacto__activo {
 }
 .acerca__parrafo h3 {
   font-size: medium;
-  color: #BB8F70;
+  color: #465856;
 }
 .acerca__parrafo p {
   text-align: center;
-  font: 400 0.8rem/2 "Roboto Mono", monospace;
+  font: 400 0.8rem/2 "Capriola", sans-serif;
 }
 .acerca .carrusel {
   width: 95%;
@@ -523,8 +522,7 @@ header .contacto__activo {
     margin-top: 2rem;
   }
   .acerca__subtitulo {
-    color: #E25821;
-    font-size: medium;
+    color: #12583E;
   }
   .acerca__parrafo {
     width: 90vw;
@@ -565,7 +563,7 @@ header .contacto__activo {
   width: 3rem;
   border-width: 0.3rem;
   border-radius: 0.1rem;
-  color: #E25821;
+  color: #12583E;
   margin-top: 0px;
   margin-bottom: 0px;
   justify-self: center;
@@ -576,7 +574,7 @@ header .contacto__activo {
   width: 3rem;
   border-width: 0.3rem;
   border-radius: 2px;
-  color: #E25821;
+  color: #12583E;
   justify-self: start;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -589,10 +587,10 @@ header .contacto__activo {
   grid-template-rows: 1fr 3.5fr;
 }
 .contactar__formulario input {
-  font: 400 0.8rem/2 "Roboto Mono", monospace;
+  font: 400 0.8rem/2 "Capriola", sans-serif;
   color: #252426;
   border-radius: 10px;
-  border-color: #BB8F70;
+  border-color: #465856;
   color: #252426;
   border-width: 0.1rem;
   background-color: #FBF9F7;
@@ -725,7 +723,7 @@ header .contacto__activo {
   height: 100%;
   max-height: 20rem;
   min-height: 18rem;
-  background-color: #BB8F70;
+  background-color: #465856;
   border-radius: 2rem 0 2rem 0;
   display: flex;
   align-items: center;
@@ -748,7 +746,7 @@ header .contacto__activo {
   height: 0.2rem;
   border-radius: 2px;
   margin: auto auto;
-  background-color: #E25821;
+  background-color: #12583E;
   margin-top: 2rem;
 }
 
@@ -761,7 +759,7 @@ header .contacto__activo {
   padding: 2rem 0;
 }
 .info__contenedor .info__titulo {
-  color: #E25821;
+  color: #12583E;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -966,7 +964,7 @@ header .contacto__activo {
   max-width: 22.5rem;
   height: auto;
   color: #FBF9F7;
-  background-color: #BB8F70;
+  background-color: #465856;
   border-radius: 0 1.5rem 0 1.5rem;
   display: grid;
   grid-template-rows: 1fr 2fr;
