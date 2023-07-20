@@ -38,7 +38,6 @@ header {
   .logo {
     width: 20vw;
     max-width: 7rem;
-    opacity: 70%;
     height: auto;
     justify-self: center;
     align-self: center;
@@ -66,24 +65,21 @@ header {
   .nav-link {
     color: $color-dark;
     font: $subtitle-font;
-    padding-left: 1rem;
+    padding: 0.2rem 0.2rem 0.2rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     margin-left: 2rem;
     margin-right: 3rem;
     border-radius: 0.5rem;
-
-    &:hover {
-      color: $color-acentotomato;
-      font-weight: 500;
-    }
   }
 
   .contacto {
-    color: $color-primary;
-    background-color: $color-light;
+    color: $color-bg-secondary;
+    background-color: $color-bg-container;
     font-weight: 500;
-    padding-left: 1rem;
+    padding: 0.2rem 0.2rem 0.2rem 1rem;
     margin-top: 2rem;
-    margin-bottom: 41rem;
+    margin-bottom: 100vh;
 
     &:hover {
       color: $color-bg-container;
@@ -97,8 +93,8 @@ header {
   }
 
   .contacto__activo {
-    color: $color-light;
-    background-color: $color-bg-container;
+    color: $color-primary;
+    background-color: $color-bg-secondary;
   }
 }
 
@@ -118,7 +114,7 @@ header {
     }
 
     .activo {
-      color: $color-primary;
+      color:$color-bg-container;
       background-color: $color-light;
     }
 
@@ -158,8 +154,8 @@ header {
         height: 100%;
         border-radius: 4px;
         text-align: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
 
         &:hover {
           color: $color-acentotomato;
@@ -174,7 +170,8 @@ header {
     .contacto {
       width: 12rem;
       height: 4rem;
-      color: $color-acentotomato;
+      color: $color-secondary;      
+      background-color: $color-bg-secondary;
       align-self: center;
       padding: 0.5rem 0;
       margin: 1.5rem 1rem;
@@ -187,16 +184,16 @@ header {
       &:hover {
         width: 12.5rem;
         height: 4.5rem;
-        background-color: $color-bg-secondary;
-        color: $color-light;              
+        color: $color-light;  
+        background-color: $color-bg-container;                         
         border-width: 0.3rem;
         border-width: 1rem;
         transition: all 2ms;        
       }
 
       &__activo {
-        color: $color-primary;
-        background-color: $color-bg-secondary;        
+        color: $color-bg-secondary;  
+        background-color: $color-bg-container;       
       }
     }
   }

@@ -9,7 +9,7 @@
 
   .subtitulo__seccion {
     text-align: center;
-    color: $color-dark;
+    color: $color-secondary;
   }
 
   &__informacion {
@@ -44,12 +44,16 @@
       display: grid;
       grid-template-columns: 2fr 3fr;
       grid-template-rows: 100%;
+
+    p {
+      margin: auto 0;     
+    }
     }
 
     .icono__card {
       display: grid;
-      flex-wrap: nowrap;
-      background-color: $color-secondary;
+      flex-wrap: nowrap;      
+      background-color: $color-acentotomato;
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
@@ -69,7 +73,7 @@
     height: 32rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: $color-bg-secondary;
+    background-color: $color-bg-secondary;    
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -81,9 +85,8 @@
     &__card {
       width: 90%;
       max-width: 22.5rem;
-      height: auto;
-      color: $color-light;
-      background-color: $color-bg-container;
+      height: auto;      
+      background-color: $color-secondary;      
       border-radius: 0 1.5rem 0 1.5rem;
       display: grid;
       grid-template-rows: 1fr 2fr;
@@ -93,8 +96,15 @@
       text-align: center;
       padding-top: 2rem;
 
-      h1 {
-        font-size: medium;
+      h1 {        
+        font-size: 0.8rem;       
+        color: $color-bg-secondary;
+        margin: 1rem auto;
+      }
+
+      .btn{
+        font-size: x-large;
+        padding: 0.5rem;
       }
     }
 
@@ -109,6 +119,7 @@
         border-radius: 2rem 2rem 0 0;
         height: 100%;
         object-fit: cover;
+        opacity: 70%;
       }
     }
   }
@@ -143,6 +154,15 @@
           margin-left: 0;
           grid-column-start: 1;
           padding: 20% 0;
+
+          h1 {        
+            font-size: 1rem;     
+          }
+
+          .btn{
+            font-size: Xx-large;
+            padding: 0.4rem;
+          }
         }
 
 

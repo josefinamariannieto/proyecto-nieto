@@ -78,7 +78,7 @@
   padding: 2rem 0;
 
   .info__titulo {
-    color: $color-primary;
+    color: $color-acento;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -129,6 +129,14 @@
     .separador__linea {
       margin-top: 4rem;
     }
+
+    .info__titulo {
+      font-size: 1.1rem ;
+    }
+
+    .info__parrafo {
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -161,15 +169,16 @@
       height: 62rem;
 
       .info__contenedor {
-        width: 85%;
+        width: 88%;
       }
 
       .separador__linea {
         margin-top: 5rem;
       }
 
-      .info__parrafo {
-        max-width: 60rem;
+      .info__parrafo {       
+        max-width: 90rem;
+        margin: 0 auto;
       }
     }
   }

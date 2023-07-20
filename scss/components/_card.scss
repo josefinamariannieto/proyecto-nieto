@@ -1,17 +1,8 @@
-h1 .titulo__seccion {
-  color: $color-light;
-  max-width: 17rem;
-  font-size: medium;
-  line-height: 1.2;
-  font-weight: 600;
-  text-align: center;  
-}
-
 .contenedoramarillo__card {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
-  background-color: #f3bb039d;
+  background-color: #11453889;
   padding: 8rem 1rem;  
 }
 
@@ -19,7 +10,7 @@ h1 .titulo__seccion {
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
-  background-color: #bb8f70b2;
+  background-color: #465856d0;
   padding: 6rem 1rem;  
 }
 
@@ -33,7 +24,7 @@ h1 .titulo__seccion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 60%;
+  opacity: 95%;
   text-align: center;
 }
 
@@ -47,7 +38,7 @@ h1 .titulo__seccion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 60%;
+  opacity: 95%;
   text-align: center;
 }
 
@@ -61,30 +52,31 @@ h1 .titulo__seccion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 60%;
+  opacity: 95%;
   text-align: center;
 }
 
 .proyecto__titulo{
-  color:$color-light;
+  color:$color-dark;
+  font-size: medium;
 }
 
 .btn {
   color: $color-secondary;
-  background-color: $color-light;
-  font: $subtitle-font;
-  font-size: medium;
+  background-color: $color-bg-secondary;
+  font: $subtitle-font;  
+  font-size: 1.8rem;
   font-weight: 500;
   width: 60%;
   max-width: 16rem;
   height: 3.5rem;
   border-radius: 1.5rem;
   text-align: center;
-  padding: 1rem 0.7rem;   
+  padding: 0.5rem 0.7rem;   
 
   &:hover {
-    color: $color-secondary;
-    background-color: $color-light;
+    color: $color-bg-secondary;
+    background-color: $color-primary;
     width: 101%;
   }
 }
@@ -96,7 +88,7 @@ h1 .titulo__seccion {
     width: 95%;
 
     .contenedoramarillo__card {
-      background-color: #f3bb03ba;
+      background-color: #11453889;
       opacity: 0; 
       padding: 10rem 1rem;        
 
@@ -106,7 +98,7 @@ h1 .titulo__seccion {
     }
 
     .contenedormorado__card {
-      background-color: #bb8f70bd;
+      background-color: #465856d0;
       opacity: 0;
       padding: 10rem 1rem;  
 
@@ -137,11 +129,7 @@ h1 .titulo__seccion {
         height: 102%;
         transition: all 2ms;
       }
-    }
-
-    .btn {
-      font-size: large;
-    }
+    }    
   }
 }
 
@@ -170,9 +158,5 @@ h1 .titulo__seccion {
       grid-column: span 1;
       grid-row: span 1;
     }
-  }
-
-  .btn {
-    font-size: medium;
   }
 }

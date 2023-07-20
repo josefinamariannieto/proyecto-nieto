@@ -12,7 +12,8 @@
   text-align: center;
 
   &__subtitulo {
-    color: $color-primary;
+    color: $color-acento;
+    font-size: 1.8rem;
   }
 
   &__parrafo {
@@ -26,13 +27,14 @@
 
     h3 {
       font-size: medium;
-      color: $color-bg-container;
+      color: $color-acento;
     }
 
     p {
       text-align: center;
-      font: $paragraph-font;
+      font-size: 0.9rem;
     }
+      
   }
 
   .carrusel {
@@ -54,16 +56,16 @@
     height: 65rem;
     grid-template-rows: 1fr 1fr 4fr 6fr;
 
+    &__subtitulo {      
+      font-size: 2rem;
+    }
+
     .carrusel {
       width: 80%;
       max-width: 35rem;
       margin-top: 2rem;
-    }
-
-    &__subtitulo {
-      color: $color-primary;
-    }
-
+    }   
+    
     &__parrafo {
       width: 90vw;
       max-width: 40rem;
@@ -89,7 +91,7 @@
       width: 90vw;
       max-width: 55rem;
       height: 20rem;
-      margin: 4rem auto;
+      margin: 4rem auto;    
     }
   }
 }

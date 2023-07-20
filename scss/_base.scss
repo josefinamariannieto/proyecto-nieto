@@ -1,14 +1,15 @@
-$color-primary: #12583E;
+$color-primary: #114538;
 $color-acentotomato: #465856;
-$color-secondary: #F3BA03;
-$color-bg-container: #465856;
-$color-bg-secondary: #E8E0D7;
-$color-dark: #252426;
-$color-light: #FBF9F7;
+$color-secondary: #045541;
+$color-bg-container: #5E8D83;
+$color-bg-secondary: #D2E1CC;
+$color-acento:#BB8F70;
+$color-dark: #413F42;
+$color-light: #F5F6F6;
 $font-primary: 'Capriola', sans-serif;
 $title-font: 500 1rem/1.5 'Capriola', sans-serif;
 $subtitle-font: 400 2.2rem/1.5 'Sacramento', cursive;
-$paragraph-font: 400 0.8rem/2 'Capriola', sans-serif;
+$paragraph-font: 400 0.8rem/1.7 'Capriola', sans-serif;
 
 
 * {
@@ -40,8 +41,8 @@ h2 {
 }
 
 h3 {
-  font-family: $font-primary;
-  font-size: 0.9rem;
+  font-family: $color-acento;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -64,7 +65,7 @@ main {
 
 .titulo__seccion {
   width: 100%;
-  color: $color-primary;
+  color: $color-secondary;
   text-align: center;
  }
 
