@@ -1,7 +1,7 @@
 $color-primary: #114538;
-$color-acentotomato: #465856;
+$color-acentotomato: #374b48;
 $color-secondary: #0e8466;
-$color-bg-container: #5E8D83;
+$color-bg-container: #50877b;
 $color-bg-secondary: #D2E1CC;
 $color-acento: #BB8F70;
 $color-dark: #413F42;
@@ -82,4 +82,13 @@ main {
   h1 {    
     font-size: 1rem;
   }
+}
+
+@media (min-width: 1200px) and (orientation:landscape) {
+
+  p {
+    font-size: 0.9em;
+    line-height: 2rem;
+  }
+
 }

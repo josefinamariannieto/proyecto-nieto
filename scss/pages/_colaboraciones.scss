@@ -1,6 +1,6 @@
 .colaboraciones {
   width: 100vw;
-  height: 62rem;
+  height: 60rem;
   display: grid;
   grid-template-rows: 1.5fr 4.5fr;
   justify-self: center;
@@ -11,13 +11,12 @@
   .subtitulo__seccion {
     text-align: center;
     color: $color-primary;    
-    font-weight: 300;
   }
 
   &__informacion {
     width: 85%;
     display: grid;
-    grid-template-rows: 0.25fr 0.25fr 2.5fr;
+    grid-template-rows: 0.25fr 0.25fr 1.5fr;
     justify-self: center;
     align-items: center;
     text-align: end;
@@ -55,7 +54,7 @@
     .icono__card {
       display: grid;
       flex-wrap: nowrap;
-      background-color: $color-bg-secondary;
+      background-color: $color-acento;
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
@@ -63,7 +62,7 @@
       margin-right: 1rem;
 
       i {
-        color: $color-acento;
+        color: $color-bg-secondary;
         font-size: 1.4rem;
         justify-content: center;
       }
@@ -132,11 +131,12 @@
 @media (min-width: 768px) {
 
   .colaboraciones {
-    height: 43rem;
-    grid-template-rows: 1.5fr 5.5fr;
+    height: 48rem;
+    grid-template-rows: 1fr 6fr;
+    padding-bottom: 9rem;
 
     &__contenedor {
-      height: 24rem;
+      height: auto;
       margin: 0;
 
       .colaboracion {
@@ -188,10 +188,14 @@
 
 @media (min-width: 1200px) and (orientation:landscape) {
 
+  .titulo__seccion{
+    font-size: 1rem;
+  } 
+
   .colaboraciones {
-    height: 50rem;
+    height: 48rem;
     grid-template-rows: 1fr 6fr;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
 
     &__contenedor {
       height: 34rem;

@@ -80,7 +80,7 @@
   padding: 2rem 0;
 
   .info__titulo {
-    color: $color-acento;
+    color: $color-acentotomato;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -134,15 +134,20 @@
       margin-top: 4rem;
     }
 
+    .frase__parrafo {
+      font-size: 1rem;
+    }
+  }
+
     .info__titulo {
-      font-size: 1.1rem ;
+      font-size: 1rem ;
     }
 
     .info__parrafo {
       font-size: 0.9rem;
     }
   }
-}
+
 
 
 @media (min-width: 1200px) and (orientation:landscape) {
@@ -170,7 +175,7 @@
     }
 
     .mas {
-      height: 72rem;
+      height: 76rem;
 
       .info__contenedor {
         width: 88%;
@@ -180,8 +185,9 @@
         margin-top: 5rem;
       }
 
-      .info__parrafo {       
-        max-width: 90rem;
+      .info__parrafo {  
+        width: 95%;     
+        max-width: 95rem;
         margin: 0 auto;
       }
     }
