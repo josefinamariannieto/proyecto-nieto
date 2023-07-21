@@ -15,12 +15,12 @@
     max-width: 25rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 20rem);
+    grid-template-rows: repeat(6, 19rem);
     row-gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
     justify-self: center;
-    padding: 0 1rem;
+    padding: 2rem 1rem 6rem 1rem;
   }
 }
 
@@ -28,34 +28,38 @@
   .proyectos {
     width: 92%;
     max-width: 75rem;
-    height: 70rem;
+    height: 65rem;
 
     &__contenedor {
-      max-width: 70rem;
+      max-width: 48rem;
+      min-width: 38rem;
       height: 60rem;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;      
+      padding: 0 4rem;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 20rem);
+      grid-template-rows: repeat(3, 18rem);
       column-gap: 1rem;
-      padding: 0 2rem;
+      row-gap: 1rem;      
     }
   }
 }
 
 @media (min-width: 1200px) and (orientation:landscape) {
   .proyectos {
-    height: 62.5rem;
+    width: 96%;
+    max-width: 76rem;
+    height: 63rem;
 
     &__contenedor {
-      height: 40rem;
+      height: 56rem;
+      max-width: 70rem;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      padding: 0;
+      grid-template-rows: repeat(2, 23rem);
+      margin-top: 0;
+      padding: 2rem 0 6rem 0;
       column-gap: 1rem;
       row-gap: 1rem;
     }
   }
-
-
 }

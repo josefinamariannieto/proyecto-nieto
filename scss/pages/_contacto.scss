@@ -1,13 +1,13 @@
 .contactar {
   width: 20rem;
-  height: 32rem;
+  height: 36rem;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 3.5fr;
   justify-self: center;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 4rem;
   z-index: 0;
 
   &__linea1 {
@@ -42,14 +42,12 @@
 
     input {
       font: $paragraph-font;
-      color: $color-dark;
-      border-radius: 10px;
-      border-color: $color-bg-container;
-      color: $color-dark;
+      font-weight: 300;      
+      border-radius: 0.7rem;
+      border-color: $color-bg-container;      
       border-width: 0.1rem;
       background-color: $color-light;
-      padding-left: 1rem;
-      
+      padding-left: 0.5rem;         
     }
 
     .input1 {

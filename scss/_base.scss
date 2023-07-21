@@ -1,15 +1,15 @@
 $color-primary: #114538;
 $color-acentotomato: #465856;
-$color-secondary: #045541;
+$color-secondary: #0e8466;
 $color-bg-container: #5E8D83;
 $color-bg-secondary: #D2E1CC;
-$color-acento:#BB8F70;
+$color-acento: #BB8F70;
 $color-dark: #413F42;
 $color-light: #F5F6F6;
 $font-primary: 'Capriola', sans-serif;
 $title-font: 500 1rem/1.5 'Capriola', sans-serif;
 $subtitle-font: 400 2.2rem/1.5 'Sacramento', cursive;
-$paragraph-font: 400 0.8rem/1.7 'Capriola', sans-serif;
+$paragraph-font: 400 0.85rem/1.7 'Capriola', sans-serif;
 
 
 * {
@@ -34,6 +34,7 @@ img {
 
 h1 {
   font: $title-font;
+  font-size: 0.9rem;
 }
 
 h2 {
@@ -41,9 +42,9 @@ h2 {
 }
 
 h3 {
-  font-family: $color-acento;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: 'Capriola', sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 p {
@@ -52,7 +53,7 @@ p {
 }
 
 body {
-  background-color: $color-light;
+  background-color: $color-bg-secondary;
 }
 
 main {
@@ -60,19 +61,25 @@ main {
   background-color: $color-light;
   align-items: center;
   align-self: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
+  border-radius: 0 0 4rem 4rem;
 }
 
 .titulo__seccion {
   width: 100%;
-  color: $color-secondary;
+  color: $color-dark;
   text-align: center;
- }
+  margin-bottom: 1rem;
+}
 
 
 @media (min-width: 768px) and (orientation:landscape) {
 
   main {
-    padding-top: 4rem;
+    padding-top: 6rem;
+  }
+
+  h1 {    
+    font-size: 1rem;
   }
 }

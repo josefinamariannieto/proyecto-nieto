@@ -31,8 +31,7 @@
     }
 
     p {
-      text-align: center;
-      font-size: 0.9rem;
+      text-align: center;      
     }
       
   }
@@ -46,6 +45,17 @@
     img {
       border-radius: 1rem;
     }
+
+    .carousel-control-prev-icon{
+      background-color: $color-bg-secondary;
+      border-radius: 1rem;  
+
+    }
+
+    .carousel-control-next-icon{     
+      background-color: $color-bg-secondary;
+      border-radius: 1rem;      
+    }
   }
 }
 
@@ -55,6 +65,7 @@
   .acerca {
     height: 65rem;
     grid-template-rows: 1fr 1fr 4fr 6fr;
+    padding-bottom: 3rem;
 
     &__subtitulo {      
       font-size: 2rem;
@@ -70,7 +81,7 @@
       width: 90vw;
       max-width: 40rem;
       height: 22rem;
-      margin: 4rem auto;
+      margin: 4rem auto;     
     }
   }
 }

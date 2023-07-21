@@ -20,6 +20,7 @@ img {
 
 h1 {
   font: 500 1rem/1.5 "Capriola", sans-serif;
+  font-size: 0.9rem;
 }
 
 h2 {
@@ -27,18 +28,18 @@ h2 {
 }
 
 h3 {
-  font-family: #BB8F70;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: "Capriola", sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
 }
 
 p {
-  font: 400 0.8rem/1.7 "Capriola", sans-serif;
+  font: 400 0.85rem/1.7 "Capriola", sans-serif;
   color: #413F42;
 }
 
 body {
-  background-color: #F5F6F6;
+  background-color: #D2E1CC;
 }
 
 main {
@@ -46,18 +47,23 @@ main {
   background-color: #F5F6F6;
   align-items: center;
   align-self: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
+  border-radius: 0 0 4rem 4rem;
 }
 
 .titulo__seccion {
   width: 100%;
-  color: #045541;
+  color: #413F42;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
   main {
-    padding-top: 4rem;
+    padding-top: 6rem;
+  }
+  h1 {
+    font-size: 1rem;
   }
 }
 .contenedoramarillo__card {
@@ -65,7 +71,7 @@ main {
   height: 100%;
   border-radius: 0.5rem;
   background-color: rgba(17, 69, 56, 0.537254902);
-  padding: 8rem 1rem;
+  padding: 8rem 1rem 6rem 1rem;
 }
 
 .contenedormorado__card {
@@ -73,7 +79,7 @@ main {
   height: 100%;
   border-radius: 0.5rem;
   background-color: rgba(70, 88, 86, 0.8156862745);
-  padding: 6rem 1rem;
+  padding: 8rem 1rem 6rem 1rem;
 }
 
 .proyecto1__card {
@@ -118,16 +124,58 @@ main {
   text-align: center;
 }
 
+.proyecto4__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-image: url(../img/manos-alto-angulo-sosteniendo-papel.jpg);
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 95%;
+  text-align: center;
+}
+
+.proyecto5__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-image: url(../img/vista-lateral-mano-sosteniendo-pieza-papel.jpg);
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 95%;
+  text-align: center;
+}
+
+.proyecto6__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-image: url(../img/mujer-haciendo-interfaz-aplicacion-moderna.jpg);
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 95%;
+  text-align: center;
+}
+
 .proyecto__titulo {
-  color: #413F42;
-  font-size: medium;
+  color: #000000;
+  font-size: 0.9rem;
 }
 
 .btn {
-  color: #045541;
+  color: #0e8466;
   background-color: #D2E1CC;
   font: 400 2.2rem/1.5 "Sacramento", cursive;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 500;
   width: 60%;
   max-width: 16rem;
@@ -135,67 +183,73 @@ main {
   border-radius: 1.5rem;
   text-align: center;
   padding: 0.5rem 0.7rem;
-}
-.btn:hover {
-  color: #D2E1CC;
-  background-color: #114538;
-  width: 101%;
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
-  .cards__contenedor {
-    width: 95%;
-  }
-  .cards__contenedor .contenedoramarillo__card {
+  .contenedoramarillo__card {
     background-color: rgba(17, 69, 56, 0.537254902);
     opacity: 0;
     padding: 10rem 1rem;
   }
-  .cards__contenedor .contenedoramarillo__card:hover {
-    opacity: 100%;
-  }
-  .cards__contenedor .contenedormorado__card {
+  .contenedormorado__card {
     background-color: rgba(70, 88, 86, 0.8156862745);
     opacity: 0;
     padding: 10rem 1rem;
   }
-  .cards__contenedor .contenedormorado__card:hover {
-    opacity: 100%;
-  }
-  .cards__contenedor .proyecto1__card:hover {
+  .proyecto1__card:hover {
     width: 102%;
     height: 102%;
     transition: all 2ms;
   }
-  .cards__contenedor .proyecto2__card:hover {
+  .proyecto2__card:hover {
     width: 102%;
     height: 102%;
     transition: all 2ms;
   }
-  .cards__contenedor .proyecto3__card:hover {
+  .proyecto3__card:hover {
     width: 102%;
     height: 102%;
     transition: all 2ms;
+  }
+  .proyecto4__card:hover {
+    width: 102%;
+    height: 102%;
+    transition: all 2ms;
+  }
+  .proyecto5__card:hover {
+    width: 102%;
+    height: 102%;
+    transition: all 2ms;
+  }
+  .proyecto6__card:hover {
+    width: 102%;
+    height: 102%;
+    transition: all 2ms;
+  }
+  .btn {
+    font-size: 1.9rem;
   }
 }
 @media (min-width: 1200px) and (orientation: landscape) {
-  .cards__contenedor {
-    width: 95%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: minmax(350px, 30vh);
-    column-gap: 1rem;
+  .btn:hover {
+    color: #D2E1CC;
+    background-color: #114538;
+    width: 101%;
   }
-  .cards__contenedor img {
-    width: 100%;
-    height: 100%;
-  }
-  .cards__contenedor .contenedoramarillo__card {
+  .contenedoramarillo__card {
     padding: 8rem 1rem;
   }
-  .cards__contenedor .contenedormorado__card {
+  .contenedoramarillo__card:hover {
+    opacity: 100%;
+  }
+  .contenedormorado__card {
     padding: 8rem 1rem;
   }
-  .cards__contenedor .proyecto1__card {
+  .contenedormorado__card:hover {
+    opacity: 100%;
+  }
+  .proyecto1__card {
     grid-column: span 1;
     grid-row: span 1;
   }
@@ -203,23 +257,13 @@ main {
 footer {
   width: 100%;
   height: auto;
-  background-color: #F5F6F6;
+  background-color: #D2E1CC;
   display: grid;
   grid-template-rows: repeat(2, 5rem);
   justify-items: center;
   align-items: center;
   align-content: center;
-  margin: 4rem 0;
-}
-footer a {
-  display: none;
-  font-family: "Capriola", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: #413F42;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-left: 19px;
+  margin: 3rem 0;
 }
 footer .redes {
   width: 60%;
@@ -228,6 +272,20 @@ footer .redes {
   grid-template-rows: 5rem;
   justify-items: center;
   align-items: center;
+}
+footer .redes__info {
+  display: none;
+  color: #413F42;
+  margin-left: 1rem;
+}
+footer .redes__card {
+  font-family: "Capriola", sans-serif;
+  font-size: 0.75rem;
+  margin: 0.5rem 0.5rem;
+  padding: 1rem 0;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
 }
 footer .redes .icono__card {
   display: grid;
@@ -273,10 +331,10 @@ footer .footer__info .footer__copy {
   .redes {
     max-width: 50%;
   }
-  .redes a {
-    display: block;
+  .redes .redes__info {
+    display: flex;
   }
-  .redes__card {
+  .redes .redes__card {
     display: flex;
   }
 }
@@ -314,7 +372,7 @@ header .navbar-brand {
 }
 header .logo {
   width: 20vw;
-  max-width: 7rem;
+  max-width: 6.5rem;
   height: auto;
   justify-self: center;
   align-self: center;
@@ -376,10 +434,10 @@ header .contacto__activo {
     height: 9rem;
     padding-top: 1rem;
     margin-right: 1rem;
-    z-index: index 10;
+    z-index: 10;
   }
   header .activo {
-    color: #5E8D83;
+    color: #0e8466;
     background-color: #F5F6F6;
   }
   header .container {
@@ -389,6 +447,7 @@ header .contacto__activo {
   }
   header .navbar-brand {
     padding: 1rem;
+    margin-right: 0;
   }
   header .navbar-brand:hover {
     width: 10rem;
@@ -396,15 +455,14 @@ header .contacto__activo {
     transition: all 2ms;
   }
   header ul .navbar-nav {
-    width: 100%;
     height: 9rem;
     justify-content: center;
     align-items: center;
-    z-index: index 10;
+    z-index: 10;
   }
   header .nav-item {
+    width: 10rem;
     height: 4rem;
-    margin: 0.5rem 0;
     justify-items: start;
     align-items: center;
     padding-left: 0;
@@ -414,8 +472,8 @@ header .contacto__activo {
     height: 100%;
     border-radius: 4px;
     text-align: center;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
   }
   header .nav-item .nav-link:hover {
     color: #465856;
@@ -427,7 +485,7 @@ header .contacto__activo {
   header .contacto {
     width: 12rem;
     height: 4rem;
-    color: #045541;
+    color: #0e8466;
     background-color: #D2E1CC;
     align-self: center;
     padding: 0.5rem 0;
@@ -484,7 +542,6 @@ header .contacto__activo {
 }
 .acerca__parrafo p {
   text-align: center;
-  font-size: 0.9rem;
 }
 .acerca .carrusel {
   width: 95%;
@@ -495,11 +552,20 @@ header .contacto__activo {
 .acerca .carrusel img {
   border-radius: 1rem;
 }
+.acerca .carrusel .carousel-control-prev-icon {
+  background-color: #D2E1CC;
+  border-radius: 1rem;
+}
+.acerca .carrusel .carousel-control-next-icon {
+  background-color: #D2E1CC;
+  border-radius: 1rem;
+}
 
 @media (min-width: 768px) and (orientation: landscape) {
   .acerca {
     height: 65rem;
     grid-template-rows: 1fr 1fr 4fr 6fr;
+    padding-bottom: 3rem;
   }
   .acerca__subtitulo {
     font-size: 2rem;
@@ -534,14 +600,14 @@ header .contacto__activo {
 }
 .contactar {
   width: 20rem;
-  height: 32rem;
+  height: 36rem;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 3.5fr;
   justify-self: center;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 4rem;
   z-index: 0;
 }
 .contactar__linea1 {
@@ -572,14 +638,13 @@ header .contacto__activo {
   grid-template-rows: 1fr 3.5fr;
 }
 .contactar__formulario input {
-  font: 400 0.8rem/1.7 "Capriola", sans-serif;
-  color: #413F42;
-  border-radius: 10px;
+  font: 400 0.85rem/1.7 "Capriola", sans-serif;
+  font-weight: 300;
+  border-radius: 0.7rem;
   border-color: #5E8D83;
-  color: #413F42;
   border-width: 0.1rem;
   background-color: #F5F6F6;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 .contactar__formulario .input1 {
   width: 20rem;
@@ -689,7 +754,7 @@ header .contacto__activo {
   grid-template-rows: repeat(3, minmax(20.5rem, 29rem));
   justify-self: center;
   justify-content: space-around;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .mas {
@@ -702,6 +767,7 @@ header .contacto__activo {
   grid-template-rows: auto;
   align-items: center;
   justify-items: center;
+  padding: 2rem 0 8rem 0;
 }
 .mas .frase__contenedor {
   width: 100%;
@@ -757,13 +823,14 @@ header .contacto__activo {
 @media (min-width: 768px) and (orientation: landscape) {
   main .principal__seccion {
     width: 92%;
-    max-width: 38rem;
+    max-width: 42rem;
   }
   main .principal__seccion .cards__contenedor {
-    height: 49rem;
-    grid-template-columns: repeat(2, minmax(20.5rem, 29rem));
-    grid-template-rows: repeat(2, minmax(20.5rem, 24rem));
+    height: 42rem;
+    grid-template-columns: repeat(2, minmax(20.5rem, 34rem));
+    grid-template-rows: 24rem 19rem;
     column-gap: 1rem;
+    row-gap: 1rem;
   }
   main .principal__seccion .proyecto1__card {
     grid-column: span 2;
@@ -778,8 +845,9 @@ header .contacto__activo {
     grid-row: span 1;
   }
   .mas {
-    height: 70rem;
+    height: 78rem;
     grid-template-rows: 1fr 0.5fr 4fr;
+    padding-bottom: 6rem;
   }
   .mas .separador__linea {
     margin-top: 4rem;
@@ -811,7 +879,7 @@ header .contacto__activo {
     grid-row: span 1;
   }
   main .mas {
-    height: 62rem;
+    height: 72rem;
   }
   main .mas .info__contenedor {
     width: 88%;
@@ -841,64 +909,72 @@ header .contacto__activo {
   max-width: 25rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 20rem);
+  grid-template-rows: repeat(6, 19rem);
   row-gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   justify-self: center;
-  padding: 0 1rem;
+  padding: 2rem 1rem 6rem 1rem;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
   .proyectos {
     width: 92%;
     max-width: 75rem;
-    height: 70rem;
+    height: 65rem;
   }
   .proyectos__contenedor {
-    max-width: 70rem;
+    max-width: 48rem;
+    min-width: 38rem;
     height: 60rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 4rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 20rem);
+    grid-template-rows: repeat(3, 18rem);
     column-gap: 1rem;
-    padding: 0 2rem;
+    row-gap: 1rem;
   }
 }
 @media (min-width: 1200px) and (orientation: landscape) {
   .proyectos {
-    height: 62.5rem;
+    width: 96%;
+    max-width: 76rem;
+    height: 63rem;
   }
   .proyectos__contenedor {
-    height: 40rem;
+    height: 56rem;
+    max-width: 70rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 0;
+    grid-template-rows: repeat(2, 23rem);
+    margin-top: 0;
+    padding: 2rem 0 6rem 0;
     column-gap: 1rem;
     row-gap: 1rem;
   }
 }
 .colaboraciones {
   width: 100vw;
-  height: 48rem;
+  height: 62rem;
   display: grid;
-  grid-template-rows: 0.5fr 5fr;
+  grid-template-rows: 1.5fr 4.5fr;
   justify-self: center;
   align-items: center;
   justify-items: center;
+  padding: 1rem 0 4rem 0;
 }
 .colaboraciones .subtitulo__seccion {
   text-align: center;
-  color: #045541;
+  color: #114538;
+  font-weight: 300;
 }
 .colaboraciones__informacion {
-  width: 90%;
+  width: 85%;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 1rem;
+  grid-template-rows: 0.25fr 0.25fr 2.5fr;
   justify-self: center;
   align-items: center;
+  text-align: end;
 }
 .colaboraciones__contenedor {
   width: 100vw;
@@ -929,7 +1005,7 @@ header .contacto__activo {
 .colaboraciones .contacto__red .icono__card {
   display: grid;
   flex-wrap: nowrap;
-  background-color: #465856;
+  background-color: #D2E1CC;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -937,56 +1013,58 @@ header .contacto__activo {
   margin-right: 1rem;
 }
 .colaboraciones .contacto__red .icono__card i {
-  color: #F5F6F6;
-  font-size: 1rem;
+  color: #BB8F70;
+  font-size: 1.4rem;
   justify-content: center;
 }
 .colaboraciones .colaboracion {
   width: 100%;
-  height: 32rem;
+  height: 42rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: #D2E1CC;
+  background-color: #5E8D83;
   align-items: center;
   justify-items: center;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 3rem 1.5rem;
   margin: 0 auto;
 }
 .colaboraciones .colaboracion__card {
-  width: 90%;
-  max-width: 22.5rem;
-  height: auto;
-  background-color: #045541;
+  width: 100%;
+  max-width: 30rem;
+  height: 100%;
+  max-height: 16rem;
+  background-color: #D2E1CC;
   border-radius: 0 1.5rem 0 1.5rem;
   display: grid;
   grid-template-rows: 1fr 2fr;
   justify-items: center;
-  padding: 2rem 2rem;
+  padding: 2rem;
   align-items: center;
   text-align: center;
-  padding-top: 2rem;
 }
 .colaboraciones .colaboracion__card h1 {
   font-size: 0.8rem;
-  color: #D2E1CC;
+  color: #114538;
   margin: 1rem auto;
 }
 .colaboraciones .colaboracion__card .btn {
   font-size: x-large;
+  background-color: #114538;
+  color: #D2E1CC;
   padding: 0.5rem;
 }
 .colaboraciones .colaboracion__imagen {
-  width: 90%;
-  max-width: 22.5rem;
-  height: auto;
+  width: 100%;
+  max-width: 30rem;
+  height: 90%;
   margin: 0 auto;
 }
 .colaboraciones .colaboracion__imagen img {
-  border-radius: 2rem 2rem 0 0;
+  background-color: #D2E1CC;
+  border-radius: 1rem;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 70%;
 }
 
@@ -996,7 +1074,7 @@ header .contacto__activo {
     grid-template-rows: 1.5fr 5.5fr;
   }
   .colaboraciones__contenedor {
-    height: 28rem;
+    height: 24rem;
     margin: 0;
   }
   .colaboraciones__contenedor .colaboracion {
@@ -1007,7 +1085,7 @@ header .contacto__activo {
     align-self: center;
     margin: auto 0;
     column-gap: 1rem;
-    padding: 2rem 15vh;
+    padding: 2rem 20vh;
   }
   .colaboraciones__contenedor .colaboracion__card {
     width: 100%;
@@ -1036,6 +1114,22 @@ header .contacto__activo {
     grid-column-start: 2;
     grid-row-start: 1;
     align-self: flex-start;
+  }
+}
+@media (min-width: 1200px) and (orientation: landscape) {
+  .colaboraciones {
+    height: 50rem;
+    grid-template-rows: 1fr 6fr;
+    padding-bottom: 8rem;
+  }
+  .colaboraciones__contenedor {
+    height: 34rem;
+    padding-bottom: 2rem;
+  }
+  .colaboraciones__contenedor .btn:hover {
+    color: #D2E1CC;
+    background-color: #114538;
+    width: 101%;
   }
 }
 
