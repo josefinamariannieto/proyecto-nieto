@@ -14,20 +14,19 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-
   <!-- Vincular archivo Css -->
   <link rel="stylesheet" href="../css/styles.css">
   <title>DiseñoUux| Mis colaboraciones en proyectos- Diseño UX UI</title>
-
 
   <!-- Vincular fuente-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Sacramento&display=swap" rel="stylesheet">
 
-
   <!-- Favicon -->
   <link href="../img/favicon.ico" rel="Icon">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +37,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="../index.html">
-        <img src="../img/uxdesign.png" class="logo" alt="Imagen del logo">
+        <img src="../img/uxdesign.png" class="logo" alt="Imagen del logo" data-aos="fade-right">
       </a>
 
       <nav class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -57,7 +56,7 @@
           </li>
         </ul>
 
-        <a class="nav-link contacto" aria-current="page" href="contacto.html">contacto</a>
+        <a class="nav-link contacto" aria-current="page" href="contacto.html" data-aos="fade-down">contacto</a>
       </nav>
     </div>
     </nav>
@@ -91,9 +90,10 @@
       <div class="colaboraciones__contenedor">
 
         <div class="colaboracion">
-          <a class="colaboracion__imagen" href="https://hogarelalba.org.ar/" target="_blank" rel="noopener noreferrer"><img src="../img/proyecto-hogar-el-alba.jpg" alt="Proyecto Hogar el Alba"></a>
+          <a class="colaboracion__imagen" data-aos="zoom-in" href="https://hogarelalba.org.ar/" target="_blank"
+            rel="noopener noreferrer"><img src="../img/proyecto-hogar-el-alba.jpg" alt="Proyecto Hogar el Alba"></a>
 
-          <div class="colaboracion__card">
+          <div class="colaboracion__card" data-aos="fade-up-right">
             <h1>Proyecto Página Web “Hogar el Alba”</h1>
             <a class="btn" href="https://hogarelalba.org.ar/" target="_blank" rel="noopener noreferrer">Quiero ver
               más</a>
@@ -107,7 +107,7 @@
   </main>
 
   <footer>
-    <div class="redes">
+    <div class="redes" data-aos="fade-up">
       <div class="redes__card">
         <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
           <div class="icono__card">
@@ -148,6 +148,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

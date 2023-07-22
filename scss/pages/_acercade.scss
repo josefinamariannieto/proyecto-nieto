@@ -12,7 +12,7 @@
   text-align: center;
 
   &__subtitulo {
-    color: $color-acento2;
+    color: $color-morado;
     font-size: 1.8rem;
   }
 
@@ -27,13 +27,13 @@
 
     h3 {
       font-size: medium;
-      color: $color-acento2;
+      color: $color-morado;
     }
 
     p {
-      text-align: center;      
+      text-align: center;
     }
-      
+
   }
 
   .carrusel {
@@ -46,15 +46,15 @@
       border-radius: 1rem;
     }
 
-    .carousel-control-prev-icon{
+    .carousel-control-prev-icon {
       background-color: $color-bg-secondary;
-      border-radius: 1rem;  
+      border-radius: 1rem;
 
     }
 
-    .carousel-control-next-icon{     
+    .carousel-control-next-icon {
       background-color: $color-bg-secondary;
-      border-radius: 1rem;      
+      border-radius: 1rem;
     }
   }
 }
@@ -67,7 +67,7 @@
     grid-template-rows: 1fr 1fr 4fr 6fr;
     padding-bottom: 3rem;
 
-    &__subtitulo {      
+    &__subtitulo {
       font-size: 2rem;
     }
 
@@ -79,13 +79,13 @@
       width: 80%;
       max-width: 35rem;
       margin-top: 2rem;
-    }   
-    
+    }
+
     &__parrafo {
       width: 90vw;
       max-width: 40rem;
       height: 22rem;
-      margin: 4rem auto;     
+      margin: 4rem auto;
     }
   }
 }
@@ -99,19 +99,18 @@
 
     &__subtitulo {
       font-size: 2.1rem;
-  
+    }
+
+    &__parrafo {
+      width: 90vw;
+      max-width: 55rem;
+      height: 20rem;
+      margin: 4rem auto;
     }
 
     .carrusel {
       width: 70%;
       max-width: 40rem;
-    }
-
-    &__parrafo {
-      width: 90vw;     
-      max-width: 55rem;
-      height: 20rem;
-      margin: 4rem auto;    
     }
   }
 }

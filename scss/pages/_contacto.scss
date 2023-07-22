@@ -97,9 +97,7 @@
         font: $title-font;
         font-size: small;
         border-radius: 1.5rem;
-        border-width: 0.1rem;
-        background-color: $color-bg-container;
-        border-color: $color-secondary;
+        background-color: $color-secondary;
         margin-top: 1rem;
         margin-bottom: 1rem;
       }
@@ -151,7 +149,6 @@
         }
 
         &__boton {
-          font-size: medium;
           width: 10rem;
           height: 3rem;
           margin-top: 2rem;
@@ -168,6 +165,6 @@
   .input2__boton:hover {
     color: $color-bg-secondary;
     background-color: $color-primary;
-    width: 16rem;    
+    width: 13rem;    
   }
 }

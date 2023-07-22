@@ -25,6 +25,8 @@
   <!-- Favicon -->
   <link href="../img/favicon.ico" rel="Icon">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,7 +37,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="../index.html">
-        <img src="../img/uxdesign.png" class="logo" alt="Imagen del logo">
+        <img src="../img/uxdesign.png" class="logo" alt="Imagen del logo" data-aos="fade-right">
       </a>
 
       <nav class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -68,7 +70,7 @@
 
       <h2 class="acerca__subtitulo">¿Te cuento un poco sobre mi?</h2>
 
-      <div class="carrusel">
+      <div class="carrusel" data-aos="zoom-in">
 
         <div id="carouselExample" class="carousel slide">
 
@@ -125,7 +127,7 @@
   </main>
 
   <footer>
-    <div class="redes">
+    <div class="redes" data-aos="fade-up">
       <div class="redes__card">
         <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
           <div class="icono__card">
@@ -166,6 +168,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
