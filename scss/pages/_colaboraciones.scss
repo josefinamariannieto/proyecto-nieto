@@ -10,7 +10,7 @@
 
   .subtitulo__seccion {
     text-align: center;
-    color: $color-primary;    
+    color: $color-primary;
   }
 
   &__informacion {
@@ -54,7 +54,7 @@
     .icono__card {
       display: grid;
       flex-wrap: nowrap;
-      background-color: $color-acento;
+      background-color: $color-acento2;
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
@@ -94,7 +94,7 @@
       justify-items: center;
       padding: 2rem;
       align-items: center;
-      text-align: center;      
+      text-align: center;
 
       h1 {
         font-size: 0.8rem;
@@ -109,7 +109,6 @@
         padding: 0.5rem;
       }
     }
-
 
     &__imagen {
       width: 100%;
@@ -165,10 +164,9 @@
 
           .btn {
             font-size: Xx-large;
-            padding: 0.4rem;
+            padding: 0.4rem;            
           }
         }
-
 
         &__imagen {
           width: 100%;
@@ -188,24 +186,19 @@
 
 @media (min-width: 1200px) and (orientation:landscape) {
 
-  .titulo__seccion{
-    font-size: 1rem;
-  } 
-
   .colaboraciones {
     height: 48rem;
     grid-template-rows: 1fr 6fr;
     padding-bottom: 6rem;
 
+    .titulo__seccion {
+      font-size: 1rem;
+    }
+
     &__contenedor {
       height: 34rem;
-      padding-bottom: 2rem;  
-
-      .btn:hover {
-        color: $color-bg-secondary;
-        background-color: $color-primary;
-        width: 101%;
-      }
-    }
+      padding-bottom: 2rem;
+    }  
   }
 }
+

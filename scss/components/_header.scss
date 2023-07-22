@@ -1,12 +1,41 @@
-header {
+.navbar {
   height: 9rem;
   background-color: $color-light;
   padding: 0;
+  --bs-navbar-padding-X: 0;
+  --bs-navbar-padding-y: 0;
 
-  .navbar {
+
+  &-toggler {
+    margin: 0 2rem;
+    border-style: outset;
+    color: $color-dark;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &-brand {
     height: 9rem;
-    --bs-navbar-padding-X: 0;
-    --bs-navbar-padding-y: 0;
+    padding: 2rem 0;
+
+    .logo {
+      width: 20vw;
+      max-width: 6.5rem;
+      height: auto;
+      justify-self: center;
+      align-self: center;
+      opacity: 95%;
+    }
+  }
+
+  &-collapse {
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-light;
+    margin-top: 0;
+    margin-right: 20vw;
+    border-radius: 4px;
+    z-index: 10;
   }
 
   .container {
@@ -18,49 +47,15 @@ header {
     padding: 0;
   }
 
-  .navbar-toggler {
-    margin: 0 2rem;
-    border-style: outset;
-    color: $color-dark;
-    font-size: 1.5rem;
-    font-weight: 400;
-
-    &__icon {
-      color: $color-primary;
-      order: 1;
-    }
-  }
-
-  .navbar-brand {
-    height: 9rem;
-    padding: 2rem 0;
-  }
-
-  .logo {
-    width: 20vw;
-    max-width: 6.5rem;
-    height: auto;
-    justify-self: center;
-    align-self: center;
-
-    &:hover {
-      rotate: 360deg;
-      transition: rotate 5ms;
-    }
-  }
-
-  .navbar-collapse {
-    width: 100vw;
-    height: 100vh;
-    background-color: $color-light;
-    margin-top: 0;
-    margin-right: 20vw;
-    border-radius: 4px;
-    z-index: 10;    
-  }
-
   .nav-item {
     background-color: $color-light;
+    border-radius: 1.5rem;
+
+    .activo {
+      color: $color-bg-secondary;
+      background-color: $color-bg-container;
+      border-radius: 1.5rem;
+    }
   }
 
   .nav-link {
@@ -75,38 +70,36 @@ header {
   }
 
   .contacto {
-    color: $color-bg-secondary;
-    background-color: $color-bg-container;
+    color: $color-primary;
+    background-color: $color-bg-secondary;
+    border-radius: 1.5rem;
     font-weight: 500;
     padding: 0.2rem 0.2rem 0.2rem 1rem;
     margin-top: 2rem;
     margin-bottom: 8rem;
 
-    &:hover {
-      color: $color-bg-container;
-      font-weight: 500;
+    &__activo {
+      color: $color-bg-secondary;
+      background-color: $color-bg-container;
+      border-radius: 1.5rem;
     }
-  }
-
-  .activo {
-    color: $color-primary;
-    background-color: $color-bg-secondary;
-  }
-
-  .contacto__activo {
-    color: $color-primary;
-    background-color: $color-bg-secondary;
   }
 }
 
-
 @media (min-width: 1200px) and (orientation:landscape) {
 
-  header {
+  .navbar {
     height: 11rem;
     padding: 0 auto;
 
-    .navbar-collapse {
+    .logo:hover {
+      &:hover {
+        transform: rotate(360deg);
+        transition: 0.8s;
+      }
+    }
+
+    &-collapse {
       width: 100vw;
       height: 9rem;
       padding-top: 1rem;
@@ -114,18 +107,7 @@ header {
       z-index: 10;
     }
 
-    .activo {
-      color: $color-secondary;
-      background-color: $color-light;
-    }
-
-    .container {
-      width: 98%;
-      height: 9rem;
-      margin: 0 auto;
-    }
-
-    .navbar-brand {
+    &-brand {
       padding: 1rem;
       margin-right: 0;
 
@@ -136,7 +118,13 @@ header {
       }
     }
 
-    ul .navbar-nav {      
+    .container {
+      width: 98%;
+      height: 9rem;
+      margin: 0 auto;
+    }
+
+    ul .navbar-nav {
       height: 9rem;
       justify-content: center;
       align-items: center;
@@ -145,23 +133,29 @@ header {
 
     .nav-item {
       width: 10rem;
-      height: 4rem;      
+      height: 4rem;
       justify-items: start;
       align-items: center;
       padding-left: 0;
 
-      .nav-link {        
+      .activo {
+        color: $color-acento;
+        background-color: $color-light;
+      }
+
+      .nav-link {
         width: 100%;
-        height: 100%;        
+        height: 100%;
         border-radius: 4px;
         text-align: center;
-        margin: 0 auto;        
+        margin: 0 auto;
         padding: 1rem 0.5rem;
 
         &:hover {
-          color: $color-acentotomato;
+          color: $color-secondary;
           font-weight: 500;
           width: 105%;
+          
           height: 105%;
           transition: all 2ms;
         }
@@ -171,7 +165,7 @@ header {
     .contacto {
       width: 12rem;
       height: 4rem;
-      color: $color-secondary;
+      color: $color-acento;
       background-color: $color-bg-secondary;
       align-self: center;
       padding: 0.5rem 0;

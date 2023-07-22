@@ -12,7 +12,7 @@
 
   &__linea1 {
     width: 3rem;
-    border-width: 0.3rem;
+    border-width: 0.15rem;
     border-radius: 0.1rem;
     color: $color-primary;
     margin-top: 0px;
@@ -24,8 +24,8 @@
 
 
   &__linea2 {
-    width: 3rem;
-    border-width: 0.3rem;
+    width: 3rem;  
+    border-width: 0.15rem;
     border-radius: 2px;
     color: $color-primary;
     justify-self: start;
@@ -42,10 +42,11 @@
 
     input {
       font: $paragraph-font;
+      font-size: 0.82rem;
       font-weight: 300;
-      border-radius: 0.7rem;
+      border-radius: 0.5rem;      
       border-color: $color-bg-container;
-      border-width: 0.1rem;
+      border-width: 0.095rem;
       background-color: $color-light;
       padding-left: 0.5rem;
     }
@@ -90,14 +91,15 @@
       }
 
       &__boton {
-        color: $color-bg-secondary;
-        width: 10rem;
+        color: $color-light;
+        width: 9rem;
         height: 2.9rem;
         font: $title-font;
         font-size: small;
         border-radius: 1.5rem;
-        background-color: $color-acentotomato;
-        border-color: $color-bg-secondary;
+        border-width: 0.1rem;
+        background-color: $color-bg-container;
+        border-color: $color-secondary;
         margin-top: 1rem;
         margin-bottom: 1rem;
       }
@@ -150,8 +152,8 @@
 
         &__boton {
           font-size: medium;
-          width: 15rem;
-          height: 3.5rem;
+          width: 10rem;
+          height: 3rem;
           margin-top: 2rem;
           margin-bottom: 2rem;
         }
@@ -166,6 +168,6 @@
   .input2__boton:hover {
     color: $color-bg-secondary;
     background-color: $color-primary;
-    width: 17rem;    
+    width: 16rem;    
   }
 }
