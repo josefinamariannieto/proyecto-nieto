@@ -72,7 +72,7 @@ main {
     line-height: 2.2rem;
   }
   .titulo__seccion:hover {
-    color: #12a07d;
+    color: #119473;
   }
 }
 .proyecto1__card {
@@ -181,7 +181,7 @@ main {
 }
 
 .btn {
-  color: #12a07d;
+  color: #119473;
   background-color: #ECEFEA;
   font: 400 2.2rem/1.5 "Sacramento", cursive;
   font-size: 1.7rem;
@@ -474,7 +474,7 @@ footer .footer__info .footer__copy {
     margin: 0 0.3rem;
   }
   .navbar-collapse .nav-item .activo {
-    color: #12a07d;
+    color: #119473;
     background-color: #ECEFEA;
   }
   .navbar-collapse .nav-item .nav-link {
@@ -497,7 +497,7 @@ footer .footer__info .footer__copy {
   .navbar-collapse .contacto {
     width: 12rem;
     height: 4rem;
-    color: #12a07d;
+    color: #119473;
     background-color: #D2E1CC;
     align-self: center;
     padding: 0.5rem 0.5rem 1rem 0.5rem;
@@ -839,7 +839,7 @@ footer .footer__info .footer__copy {
   padding: 2rem 0;
 }
 .info__titulo {
-  color: #12a07d;
+  color: #119473;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -1047,7 +1047,7 @@ footer .footer__info .footer__copy {
   margin-right: 1rem;
 }
 .colaboraciones .contacto__red .icono__card i {
-  color: #12a07d;
+  color: #119473;
   font-size: 1.4rem;
   justify-content: center;
 }
